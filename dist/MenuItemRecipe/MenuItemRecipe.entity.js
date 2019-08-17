@@ -48,6 +48,13 @@ __decorate([
     }),
     __metadata("design:type", Number)
 ], MenuItemRecipe.prototype, "quantity", void 0);
+__decorate([
+    typeorm_1.Column('integer', {
+        nullable: false,
+        name: 'ingredientType',
+    }),
+    __metadata("design:type", Number)
+], MenuItemRecipe.prototype, "ingredientType", void 0);
 MenuItemRecipe = __decorate([
     typeorm_1.Entity('MenuItemRecipe', { schema: 'public' })
 ], MenuItemRecipe);

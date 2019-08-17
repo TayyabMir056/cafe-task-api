@@ -16,6 +16,7 @@ import {
 import { MenuItem } from '../MenuItem/MenuItem.entity';
 import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient.entity';
 import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient.entity';
+import { IngredientType } from 'src/IngredientType/IngredientType.enum';
 
 @Entity('MenuItemRecipe', { schema: 'public' })
 export class MenuItemRecipe {
@@ -54,4 +55,10 @@ export class MenuItemRecipe {
     name: 'quantity',
   })
   quantity: number;
+
+  @Column('integer', {
+    nullable: false,
+    name: 'ingredientType',
+  })
+  ingredientType: IngredientType;
 }
