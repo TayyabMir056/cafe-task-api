@@ -13,9 +13,9 @@ import {
   PrimaryGeneratedColumn,
   RelationId,
 } from 'typeorm';
-import { PriceUnit } from '../PriceUnit/PriceUnit';
-import { IntermediateIngredientRecipe } from '../IntermediateIngredientRecipe/IntermediateIngredientRecipe';
-import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe';
+import { PriceUnit } from '../PriceUnit/PriceUnit.entity';
+import { IntermediateIngredientRecipe } from '../IntermediateIngredientRecipe/IntermediateIngredientRecipe.entity';
+import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 
 @Entity('InventoryIngredient', { schema: 'public' })
 @Index('unique_ingredient_name', ['name'], { unique: true })

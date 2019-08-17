@@ -13,7 +13,7 @@ import {
   PrimaryGeneratedColumn,
   RelationId,
 } from 'typeorm';
-import { MenuItem } from '../MenuItem/MenuItem';
+import { MenuItem } from '../MenuItem/MenuItem.entity';
 
 @Entity('MenuItemCategory', { schema: 'public' })
 @Index('unique_category', ['name'], { unique: true })

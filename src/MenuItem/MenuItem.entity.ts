@@ -13,8 +13,8 @@ import {
   PrimaryGeneratedColumn,
   RelationId,
 } from 'typeorm';
-import { MenuItemCategory } from '../MenuItemCategory/MenuItemCategory';
-import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe';
+import { MenuItemCategory } from '../MenuItemCategory/MenuItemCategory.entity';
+import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 
 @Entity('MenuItem', { schema: 'public' })
 @Index('unique_menu_item', ['name'], { unique: true })

@@ -13,8 +13,8 @@ import {
   PrimaryGeneratedColumn,
   RelationId,
 } from 'typeorm';
-import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient';
-import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient';
+import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient.entity';
+import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient.entity';
 
 @Entity('IntermediateIngredientRecipe', { schema: 'public' })
 export class IntermediateIngredientRecipe {

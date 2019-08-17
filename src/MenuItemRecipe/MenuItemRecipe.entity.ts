@@ -13,9 +13,9 @@ import {
   PrimaryGeneratedColumn,
   RelationId,
 } from 'typeorm';
-import { MenuItem } from '../MenuItem/MenuItem';
-import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient';
-import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient';
+import { MenuItem } from '../MenuItem/MenuItem.entity';
+import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient.entity';
+import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient.entity';
 
 @Entity('MenuItemRecipe', { schema: 'public' })
 export class MenuItemRecipe {

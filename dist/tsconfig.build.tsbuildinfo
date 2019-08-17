@@ -1073,122 +1073,6 @@
         "version": "260f889b9e2b69f77be1155348eb345166aec664b3efff6720053c6844a41f28",
         "signature": "3293b0d1d6a7f902316e164fcf36ae099f1bbb0224484586eaab30d9dea78d32"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts": {
-        "version": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
-        "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
-        "version": "285fd4018f9de87c5972beb9133971c99212458bcfc317f1b3851adcc86d84b7",
-        "signature": "285fd4018f9de87c5972beb9133971c99212458bcfc317f1b3851adcc86d84b7"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts": {
-        "version": "8b0b6a4c032a56d5651f7dd02ba3f05fbfe4131c4095093633cda3cae0991972",
-        "signature": "8b0b6a4c032a56d5651f7dd02ba3f05fbfe4131c4095093633cda3cae0991972"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts": {
-        "version": "3476ab8d8fe0932f0344d205c998c2783f5d1da12c5f2876daaab5ef4bd34460",
-        "signature": "3476ab8d8fe0932f0344d205c998c2783f5d1da12c5f2876daaab5ef4bd34460"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts": {
-        "version": "8a7bd91ceaadc305dd05acb95123fb4244e6e11b7490ee0ed3e0d46988a23b62",
-        "signature": "8a7bd91ceaadc305dd05acb95123fb4244e6e11b7490ee0ed3e0d46988a23b62"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts": {
-        "version": "b4f3ef805e9165e1dd00c3acac1c7913c1f40c5110a6ed8d6dd1b421ab7fa948",
-        "signature": "b4f3ef805e9165e1dd00c3acac1c7913c1f40c5110a6ed8d6dd1b421ab7fa948"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts": {
-        "version": "0a05534ac178d2df73759cc43588996558496291c41daf6090708b61230f8f75",
-        "signature": "0a05534ac178d2df73759cc43588996558496291c41daf6090708b61230f8f75"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts": {
-        "version": "942ab34f62ac3f3d20014615b6442b6dc51815e30a878ebc390dd70e0dec63bf",
-        "signature": "942ab34f62ac3f3d20014615b6442b6dc51815e30a878ebc390dd70e0dec63bf"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts": {
-        "version": "efe959436af8b488c2de4c75a8ffd180fd7292bf170d5516520a025fa697e1c2",
-        "signature": "efe959436af8b488c2de4c75a8ffd180fd7292bf170d5516520a025fa697e1c2"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts": {
-        "version": "2a652b8ef86dc498e84cc9dc69247a9610567a09c52cb61e2a8f70e3cc156ee7",
-        "signature": "2a652b8ef86dc498e84cc9dc69247a9610567a09c52cb61e2a8f70e3cc156ee7"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts": {
-        "version": "620eaa2096c69dff36875f086e8a63c326fccda643360b7d7cd580b403753488",
-        "signature": "620eaa2096c69dff36875f086e8a63c326fccda643360b7d7cd580b403753488"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts": {
-        "version": "c1c60dd235d2ce756231cec4bfec763980de6913efcfc3fb459938fee9ea26a5",
-        "signature": "c1c60dd235d2ce756231cec4bfec763980de6913efcfc3fb459938fee9ea26a5"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts": {
-        "version": "9b6efda0b73b22faba66bc78363736dd7bb5602e05f8c16ef69532ac2ef10bcb",
-        "signature": "9b6efda0b73b22faba66bc78363736dd7bb5602e05f8c16ef69532ac2ef10bcb"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts": {
-        "version": "a54f4e830c537bd7c67b649c54a78931687628a1d9130341e41af0fc6fe6bc45",
-        "signature": "a54f4e830c537bd7c67b649c54a78931687628a1d9130341e41af0fc6fe6bc45"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts": {
-        "version": "512cbbc5713d6fe49ecf740bde050302f954e0a50d22badc78854283681f91e9",
-        "signature": "512cbbc5713d6fe49ecf740bde050302f954e0a50d22badc78854283681f91e9"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts": {
-        "version": "5175a0f207a73df7426acc2bdc854b0c4bfab7434742f873816f0fc71f4fa2f5",
-        "signature": "5175a0f207a73df7426acc2bdc854b0c4bfab7434742f873816f0fc71f4fa2f5"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts": {
-        "version": "052cdfe6d8e817bdf8b06da41ae738f4d787764aa05fbac08d5584e5b402c240",
-        "signature": "052cdfe6d8e817bdf8b06da41ae738f4d787764aa05fbac08d5584e5b402c240"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts": {
-        "version": "82d3e00d56a71fc169f3cf9ec5f5ffcc92f6c0e67d4dfc130dafe9f1886d5515",
-        "signature": "82d3e00d56a71fc169f3cf9ec5f5ffcc92f6c0e67d4dfc130dafe9f1886d5515"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts": {
-        "version": "6d3d77e5fa97729ca1b7e7905c148da03945981db97d3bb8b3109844fe4e9c2f",
-        "signature": "6d3d77e5fa97729ca1b7e7905c148da03945981db97d3bb8b3109844fe4e9c2f"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts": {
-        "version": "ae784e9d66abeab32be472f5725a0c7f10469eac0f3463b75810b5a7b02e1bee",
-        "signature": "ae784e9d66abeab32be472f5725a0c7f10469eac0f3463b75810b5a7b02e1bee"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": {
-        "version": "e93eef79b6bdaaf6337f64632e421b89e8526b4104a18cc3f02dffd2e391aef4",
-        "signature": "e93eef79b6bdaaf6337f64632e421b89e8526b4104a18cc3f02dffd2e391aef4"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts": {
-        "version": "ab6155da16665bf26655693abea86db88346d3ab3a86783584655251cedf96e9",
-        "signature": "ab6155da16665bf26655693abea86db88346d3ab3a86783584655251cedf96e9"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts": {
-        "version": "ccf022f436b749333f2fcb10eb2061f8fdf87729b6a6524413a02a7bbcb34d67",
-        "signature": "ccf022f436b749333f2fcb10eb2061f8fdf87729b6a6524413a02a7bbcb34d67"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts": {
-        "version": "92caa735701187eb89d8cbdf0071aac80bc56c6eb057ae3d818e09d17af9ec48",
-        "signature": "92caa735701187eb89d8cbdf0071aac80bc56c6eb057ae3d818e09d17af9ec48"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts": {
-        "version": "c6d07008f2a83d1294adf9fb18b9fe6c0e01964a66263c5a827d7ff0d0cd7abd",
-        "signature": "c6d07008f2a83d1294adf9fb18b9fe6c0e01964a66263c5a827d7ff0d0cd7abd"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts": {
-        "version": "35aaf71948ef655539e398dfffabbef3055671070502ff19d8e548e8a23b4460",
-        "signature": "35aaf71948ef655539e398dfffabbef3055671070502ff19d8e548e8a23b4460"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts": {
-        "version": "2e252235037a2cd8feebfbf74aa460f783e5d423895d13f29a934d7655a1f8be",
-        "signature": "2e252235037a2cd8feebfbf74aa460f783e5d423895d13f29a934d7655a1f8be"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts": {
-        "version": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe",
-        "signature": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts": {
-        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": {
         "version": "37350aa03991dfad308444531443272a47140d86cb0b0777832d21c62856ebd9",
         "signature": "37350aa03991dfad308444531443272a47140d86cb0b0777832d21c62856ebd9"
@@ -2157,33 +2041,185 @@
         "version": "87c5a433521c49fd7ded283bb3f6a1991976f0b44009751dd39ebea612b56a35",
         "signature": "87c5a433521c49fd7ded283bb3f6a1991976f0b44009751dd39ebea612b56a35"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts": {
-        "version": "1784ce68027dd98eb6af50d6b913824ea9908a48bf504e05d3ecce7b3b0c4cdc",
-        "signature": "2b87c6bf6b3b8247e7007ee533f7d53f4e57397ba2911e8507dc1a1818fef0cc"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts": {
+        "version": "41070599270ea1295c8855556f36c89af04d02c41c50f602870fd55dd988c83d",
+        "signature": "41070599270ea1295c8855556f36c89af04d02c41c50f602870fd55dd988c83d"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.ts": {
-        "version": "b4517ea9df03d81d783f768a1be8af9783578c0c50778c57e38696348b837c2b",
-        "signature": "8b5554e492bb63d8274b5dc1c906d2fab78856f43260c27c175cc3aaead317dd"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts": {
+        "version": "51dbabe71c84fd06b659ea96be3c6d547611e04395f41aa22e6476e6d77f3003",
+        "signature": "51dbabe71c84fd06b659ea96be3c6d547611e04395f41aa22e6476e6d77f3003"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts": {
-        "version": "50101fdd594cc7b91a8d74cc3b1ab95c98f9a1ce9ab08e317a7a8421a13b17c2",
-        "signature": "0ac415a23bbdb8ed7cdeace146c403789becd8202be31d164dd01114494515fd"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/index.d.ts": {
+        "version": "9a7638d62db8cfa1466093d7d413fdf85c5e4a7c663ed76f2bfc8739c8e01505",
+        "signature": "9a7638d62db8cfa1466093d7d413fdf85c5e4a7c663ed76f2bfc8739c8e01505"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts": {
-        "version": "a948610561944fdb5fd6291a0c4d5ac8fcfb6ed882a1a1353dfd66db822d95fd",
-        "signature": "25f4ba905eab1060814b413f04e4d9f8e5f04b8f8ff92ff93348c26957ebaedb"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts": {
+        "version": "4c0c506e17553583e683663de4097c4a9071462ffcdaa1545a258932ffed75d1",
+        "signature": "4c0c506e17553583e683663de4097c4a9071462ffcdaa1545a258932ffed75d1"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts": {
-        "version": "012dd1cd955da0377f7dcd2e56943c00d43e88aec6dc67ad8e4245b4a3680ebb",
-        "signature": "1b47cc2d89b76f355ed13b903a12b811cdc3554f860894e95d93dbcf0e2d9150"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts": {
+        "version": "c338859b98f8a11f80e3e47e33767299e7a4facdf0870c01c8694fa8fa048d16",
+        "signature": "c338859b98f8a11f80e3e47e33767299e7a4facdf0870c01c8694fa8fa048d16"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts": {
-        "version": "7086fb81941c8a36612731edf1ec0b6902afa935f1cbcc99ada75cfbd7cfc93c",
-        "signature": "0123f58c1a15a412b3d8d6c40b0d45465b180b98b272f73e043ceae5e3c53a0f"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts": {
+        "version": "9923c28300ed7b187fe639664a8fdf662ba7b1f183c9aa49d8c14acc5ace2083",
+        "signature": "9923c28300ed7b187fe639664a8fdf662ba7b1f183c9aa49d8c14acc5ace2083"
       },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts": {
-        "version": "c0ceefd36fe05f4d86955c9c5a4ac1333db15a5c5921b3007ca47fc71670ba1c",
-        "signature": "e31050e26b95dfb3da80c2b09e63a31420f66ba1c2a877b68235eaf9acbf5bea"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/index.d.ts": {
+        "version": "b113e9770d5be136c5e2add9e6cdf40d85051762ff2391f71d552975e66b1500",
+        "signature": "b113e9770d5be136c5e2add9e6cdf40d85051762ff2391f71d552975e66b1500"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts": {
+        "version": "bb4c25c2fe86fcca4914d62c4088bcc18b499390bff0bf90bc5527d4caec33ce",
+        "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
+        "version": "285fd4018f9de87c5972beb9133971c99212458bcfc317f1b3851adcc86d84b7",
+        "signature": "285fd4018f9de87c5972beb9133971c99212458bcfc317f1b3851adcc86d84b7"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts": {
+        "version": "8b0b6a4c032a56d5651f7dd02ba3f05fbfe4131c4095093633cda3cae0991972",
+        "signature": "8b0b6a4c032a56d5651f7dd02ba3f05fbfe4131c4095093633cda3cae0991972"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts": {
+        "version": "3476ab8d8fe0932f0344d205c998c2783f5d1da12c5f2876daaab5ef4bd34460",
+        "signature": "3476ab8d8fe0932f0344d205c998c2783f5d1da12c5f2876daaab5ef4bd34460"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts": {
+        "version": "8a7bd91ceaadc305dd05acb95123fb4244e6e11b7490ee0ed3e0d46988a23b62",
+        "signature": "8a7bd91ceaadc305dd05acb95123fb4244e6e11b7490ee0ed3e0d46988a23b62"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts": {
+        "version": "b4f3ef805e9165e1dd00c3acac1c7913c1f40c5110a6ed8d6dd1b421ab7fa948",
+        "signature": "b4f3ef805e9165e1dd00c3acac1c7913c1f40c5110a6ed8d6dd1b421ab7fa948"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts": {
+        "version": "0a05534ac178d2df73759cc43588996558496291c41daf6090708b61230f8f75",
+        "signature": "0a05534ac178d2df73759cc43588996558496291c41daf6090708b61230f8f75"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts": {
+        "version": "942ab34f62ac3f3d20014615b6442b6dc51815e30a878ebc390dd70e0dec63bf",
+        "signature": "942ab34f62ac3f3d20014615b6442b6dc51815e30a878ebc390dd70e0dec63bf"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts": {
+        "version": "efe959436af8b488c2de4c75a8ffd180fd7292bf170d5516520a025fa697e1c2",
+        "signature": "efe959436af8b488c2de4c75a8ffd180fd7292bf170d5516520a025fa697e1c2"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts": {
+        "version": "2a652b8ef86dc498e84cc9dc69247a9610567a09c52cb61e2a8f70e3cc156ee7",
+        "signature": "2a652b8ef86dc498e84cc9dc69247a9610567a09c52cb61e2a8f70e3cc156ee7"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts": {
+        "version": "620eaa2096c69dff36875f086e8a63c326fccda643360b7d7cd580b403753488",
+        "signature": "620eaa2096c69dff36875f086e8a63c326fccda643360b7d7cd580b403753488"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts": {
+        "version": "c1c60dd235d2ce756231cec4bfec763980de6913efcfc3fb459938fee9ea26a5",
+        "signature": "c1c60dd235d2ce756231cec4bfec763980de6913efcfc3fb459938fee9ea26a5"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts": {
+        "version": "9b6efda0b73b22faba66bc78363736dd7bb5602e05f8c16ef69532ac2ef10bcb",
+        "signature": "9b6efda0b73b22faba66bc78363736dd7bb5602e05f8c16ef69532ac2ef10bcb"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts": {
+        "version": "a54f4e830c537bd7c67b649c54a78931687628a1d9130341e41af0fc6fe6bc45",
+        "signature": "a54f4e830c537bd7c67b649c54a78931687628a1d9130341e41af0fc6fe6bc45"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts": {
+        "version": "512cbbc5713d6fe49ecf740bde050302f954e0a50d22badc78854283681f91e9",
+        "signature": "512cbbc5713d6fe49ecf740bde050302f954e0a50d22badc78854283681f91e9"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts": {
+        "version": "5175a0f207a73df7426acc2bdc854b0c4bfab7434742f873816f0fc71f4fa2f5",
+        "signature": "5175a0f207a73df7426acc2bdc854b0c4bfab7434742f873816f0fc71f4fa2f5"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts": {
+        "version": "052cdfe6d8e817bdf8b06da41ae738f4d787764aa05fbac08d5584e5b402c240",
+        "signature": "052cdfe6d8e817bdf8b06da41ae738f4d787764aa05fbac08d5584e5b402c240"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts": {
+        "version": "82d3e00d56a71fc169f3cf9ec5f5ffcc92f6c0e67d4dfc130dafe9f1886d5515",
+        "signature": "82d3e00d56a71fc169f3cf9ec5f5ffcc92f6c0e67d4dfc130dafe9f1886d5515"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts": {
+        "version": "6d3d77e5fa97729ca1b7e7905c148da03945981db97d3bb8b3109844fe4e9c2f",
+        "signature": "6d3d77e5fa97729ca1b7e7905c148da03945981db97d3bb8b3109844fe4e9c2f"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts": {
+        "version": "ae784e9d66abeab32be472f5725a0c7f10469eac0f3463b75810b5a7b02e1bee",
+        "signature": "ae784e9d66abeab32be472f5725a0c7f10469eac0f3463b75810b5a7b02e1bee"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": {
+        "version": "e93eef79b6bdaaf6337f64632e421b89e8526b4104a18cc3f02dffd2e391aef4",
+        "signature": "e93eef79b6bdaaf6337f64632e421b89e8526b4104a18cc3f02dffd2e391aef4"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts": {
+        "version": "ab6155da16665bf26655693abea86db88346d3ab3a86783584655251cedf96e9",
+        "signature": "ab6155da16665bf26655693abea86db88346d3ab3a86783584655251cedf96e9"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts": {
+        "version": "ccf022f436b749333f2fcb10eb2061f8fdf87729b6a6524413a02a7bbcb34d67",
+        "signature": "ccf022f436b749333f2fcb10eb2061f8fdf87729b6a6524413a02a7bbcb34d67"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts": {
+        "version": "92caa735701187eb89d8cbdf0071aac80bc56c6eb057ae3d818e09d17af9ec48",
+        "signature": "92caa735701187eb89d8cbdf0071aac80bc56c6eb057ae3d818e09d17af9ec48"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts": {
+        "version": "c6d07008f2a83d1294adf9fb18b9fe6c0e01964a66263c5a827d7ff0d0cd7abd",
+        "signature": "c6d07008f2a83d1294adf9fb18b9fe6c0e01964a66263c5a827d7ff0d0cd7abd"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts": {
+        "version": "35aaf71948ef655539e398dfffabbef3055671070502ff19d8e548e8a23b4460",
+        "signature": "35aaf71948ef655539e398dfffabbef3055671070502ff19d8e548e8a23b4460"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts": {
+        "version": "2e252235037a2cd8feebfbf74aa460f783e5d423895d13f29a934d7655a1f8be",
+        "signature": "2e252235037a2cd8feebfbf74aa460f783e5d423895d13f29a934d7655a1f8be"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts": {
+        "version": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe",
+        "signature": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts": {
+        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": {
+        "version": "b28b45b86e56c785c52b039aa814fa61bcf27b40e4c62a9d49a1cfc6c187b972",
+        "signature": "859ec7f072cc1e4c8ac5d7d185ce7fcc08659b42aa86f22322852e68ab443952"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts": {
+        "version": "7ee9effd65f5b0b29a428bb713ca8745b28726889ab22b0c96e67f6b3ee3bc14",
+        "signature": "418689cc92990e41758597df7aaa19ec1c9dc6e298a69e0e455855f876ea7e8e"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": {
+        "version": "bf0adfb0acef8a7647690871e41ceac6950dab756d2581510df2cd8931c52a4e",
+        "signature": "872f288c0e8c697178ad5d8a9b3f8cd577d48b4b70f3c2644f6bc785069724b5"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": {
+        "version": "823f282f17a3be566ff769d027c2ff29c4ab87360d40a878eeb6f777e255fae5",
+        "signature": "754081cd40fe622bcab4879310e88847ccabf857677793ffa147f39e422b0da6"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": {
+        "version": "80a1db340231504065b1f98bffb74b0f1a78f72896155c52b91a25b27c58f2a1",
+        "signature": "3c082a2d0aa30a5f7d1a083fe05ba512de87315fc0b0fda3ef3715665f006d61"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": {
+        "version": "68567a588acfb0c2bfd68a0cb92c3e97ab484d1842caf33955974f71ddd5f440",
+        "signature": "af5a6e5266fa7fd369a7343a5385e990e79978a287e57390dfbeaca894bc62e1"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": {
+        "version": "c3278ce24968f02b6351d4c614c3c0e295514d27edd5c4dac9be3800edcfcbbe",
+        "signature": "a231047c55923b25645cc4159fd8bc706e662edb02b83a06e4e6550d5643b17e"
       },
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@babel/types/lib/index.d.ts": {
         "version": "bc12492fa90cd2ad3f73c10efa597503dbf59ebac0e3c9728cc10adaad6b0b87",
@@ -3898,203 +3934,6 @@
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.controller.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.service.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/injectable.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/middleware-configuration.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/reflect-metadata/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
@@ -5753,54 +5592,305 @@
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts": [
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.ts": [
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/rxjs/index.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts": [
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts": [
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts": [
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.controller.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.service.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/injectable.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/middleware-configuration.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/reflect-metadata/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -7531,190 +7621,6 @@
       "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.controller.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.service.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/injectable.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/middleware-configuration.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/reflect-metadata/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
@@ -9373,35 +9279,268 @@
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/rxjs/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/injectable.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/middleware/middleware-configuration.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/type.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/external/cors-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/microservice-configuration.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/nest-application-options.interface.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/reflect-metadata/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
       ],
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@babel/types/lib/index.d.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
@@ -9818,35 +9957,6 @@
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.service.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.controller.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/schema-builder/table/tablecolumn.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/common/objectliteral.d.ts",
@@ -10089,13 +10199,51 @@
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/naming-strategy/defaultnamingstrategy.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/util/promiseutils.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/common/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/http-adapter-host.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/helpers/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/base-exception-filter.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/exceptions/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/instance-wrapper.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/application-config.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/modules-container.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/container.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/module-ref.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/injector/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/routes-mapper.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/builder.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/middleware/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application-context.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-application.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/nest-factory.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/request-constants.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/request/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/router/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@babel/types/lib/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/babel__generator/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/babel__traverse/index.d.ts",
