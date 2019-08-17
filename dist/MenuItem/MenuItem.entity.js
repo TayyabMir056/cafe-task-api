@@ -10,16 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const MenuItemCategory_entity_1 = require("../MenuItemCategory/MenuItemCategory.entity");
+const menu_item_category_entity_1 = require("../menu-item-category/menu-item-category.entity");
 const MenuItemRecipe_entity_1 = require("../MenuItemRecipe/MenuItemRecipe.entity");
 let MenuItem = class MenuItem {
 };
 __decorate([
-    typeorm_1.Column('uuid', {
-        nullable: false,
-        primary: true,
-        name: 'id',
-    }),
+    typeorm_1.PrimaryGeneratedColumn('uuid'),
     __metadata("design:type", String)
 ], MenuItem.prototype, "id", void 0);
 __decorate([
@@ -31,9 +27,9 @@ __decorate([
     __metadata("design:type", String)
 ], MenuItem.prototype, "name", void 0);
 __decorate([
-    typeorm_1.ManyToOne(type => MenuItemCategory_entity_1.MenuItemCategory, menuItemCategory => menuItemCategory.menuItems, { nullable: false }),
+    typeorm_1.ManyToOne(type => menu_item_category_entity_1.MenuItemCategory, menuItemCategory => menuItemCategory.menuItems, { nullable: false }),
     typeorm_1.JoinColumn({ name: 'category' }),
-    __metadata("design:type", MenuItemCategory_entity_1.MenuItemCategory)
+    __metadata("design:type", menu_item_category_entity_1.MenuItemCategory)
 ], MenuItem.prototype, "category", void 0);
 __decorate([
     typeorm_1.Column('double precision', {

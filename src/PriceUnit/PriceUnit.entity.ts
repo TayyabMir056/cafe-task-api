@@ -18,11 +18,7 @@ import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient.
 
 @Entity('PriceUnit', { schema: 'public' })
 export class PriceUnit {
-  @Column('uuid', {
-    nullable: false,
-    primary: true,
-    name: 'id',
-  })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column('character varying', {

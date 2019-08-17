@@ -7,9 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
+const typeorm_1 = require("@nestjs/typeorm");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
-const typeorm_1 = require("@nestjs/typeorm");
+const menu_item_category_module_1 = require("./menu-item-category/menu-item-category.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -26,6 +27,7 @@ AppModule = __decorate([
                 synchronize: false,
                 logging: true,
             }),
+            menu_item_category_module_1.MenuItemCategoryModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

@@ -20,11 +20,7 @@ import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 @Entity('InventoryIngredient', { schema: 'public' })
 @Index('unique_ingredient_name', ['name'], { unique: true })
 export class InventoryIngredient {
-  @Column('uuid', {
-    nullable: false,
-    primary: true,
-    name: 'id',
-  })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column('character varying', {

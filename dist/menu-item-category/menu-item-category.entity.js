@@ -10,31 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const IntermediateIngredient_entity_1 = require("../IntermediateIngredient/IntermediateIngredient.entity");
-const InventoryIngredient_entity_1 = require("../InventoryIngredient/InventoryIngredient.entity");
-let PriceUnit = class PriceUnit {
+const MenuItem_entity_1 = require("../MenuItem/MenuItem.entity");
+let MenuItemCategory = class MenuItemCategory {
 };
 __decorate([
     typeorm_1.PrimaryGeneratedColumn('uuid'),
     __metadata("design:type", String)
-], PriceUnit.prototype, "id", void 0);
+], MenuItemCategory.prototype, "id", void 0);
 __decorate([
     typeorm_1.Column('character varying', {
         nullable: false,
+        unique: true,
+        length: 20,
         name: 'name',
     }),
     __metadata("design:type", String)
-], PriceUnit.prototype, "name", void 0);
+], MenuItemCategory.prototype, "name", void 0);
 __decorate([
-    typeorm_1.OneToMany(type => IntermediateIngredient_entity_1.IntermediateIngredient, intermediateIngredient => intermediateIngredient.priceUnit),
+    typeorm_1.OneToMany(type => MenuItem_entity_1.MenuItem, menuItem => menuItem.category),
     __metadata("design:type", Array)
-], PriceUnit.prototype, "intermediateIngredients", void 0);
-__decorate([
-    typeorm_1.OneToMany(type => InventoryIngredient_entity_1.InventoryIngredient, inventoryIngredient => inventoryIngredient.priceUnit),
-    __metadata("design:type", Array)
-], PriceUnit.prototype, "inventoryIngredients", void 0);
-PriceUnit = __decorate([
-    typeorm_1.Entity('PriceUnit', { schema: 'public' })
-], PriceUnit);
-exports.PriceUnit = PriceUnit;
-//# sourceMappingURL=PriceUnit.entity.js.map
+], MenuItemCategory.prototype, "menuItems", void 0);
+MenuItemCategory = __decorate([
+    typeorm_1.Entity('MenuItemCategory', { schema: 'public' }),
+    typeorm_1.Index('unique_category', ['name'], { unique: true })
+], MenuItemCategory);
+exports.MenuItemCategory = MenuItemCategory;
+//# sourceMappingURL=menu-item-category.entity.js.map

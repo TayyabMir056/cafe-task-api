@@ -1,7 +1,10 @@
 import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TypeOrmModule } from '@nestjs/typeorm';
+import { MenuItemCategoryModule } from './menu-item-category/menu-item-category.module';
+import { MenuItemCategoryService } from './menu-item-category/menu-item-category.service';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -15,6 +18,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: false,
       logging: true,
     }),
+    MenuItemCategoryModule,
   ],
   controllers: [AppController],
   providers: [AppService],

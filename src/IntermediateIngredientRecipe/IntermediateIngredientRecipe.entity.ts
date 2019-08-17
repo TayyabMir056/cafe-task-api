@@ -18,11 +18,7 @@ import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient.
 
 @Entity('IntermediateIngredientRecipe', { schema: 'public' })
 export class IntermediateIngredientRecipe {
-  @Column('uuid', {
-    nullable: false,
-    primary: true,
-    name: 'id',
-  })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @ManyToOne(

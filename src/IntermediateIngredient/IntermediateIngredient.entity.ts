@@ -20,11 +20,7 @@ import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 @Entity('IntermediateIngredient', { schema: 'public' })
 @Index('intermediate_ingredients_name_key', ['name'], { unique: true })
 export class IntermediateIngredient {
-  @Column('uuid', {
-    nullable: false,
-    primary: true,
-    name: 'id',
-  })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column('character varying', {

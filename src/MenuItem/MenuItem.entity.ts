@@ -13,17 +13,13 @@ import {
   PrimaryGeneratedColumn,
   RelationId,
 } from 'typeorm';
-import { MenuItemCategory } from '../MenuItemCategory/MenuItemCategory.entity';
+import { MenuItemCategory } from '../menu-item-category/menu-item-category.entity';
 import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 
 @Entity('MenuItem', { schema: 'public' })
 @Index('unique_menu_item', ['name'], { unique: true })
 export class MenuItem {
-  @Column('uuid', {
-    nullable: false,
-    primary: true,
-    name: 'id',
-  })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column('character varying', {

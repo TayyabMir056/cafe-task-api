@@ -20,11 +20,7 @@ import { IngredientType } from 'src/IngredientType/IngredientType.enum';
 
 @Entity('MenuItemRecipe', { schema: 'public' })
 export class MenuItemRecipe {
-  @Column('uuid', {
-    nullable: false,
-    primary: true,
-    name: 'id',
-  })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @ManyToOne(type => MenuItem, menuItem => menuItem.menuItemRecipes, {

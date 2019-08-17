@@ -16,11 +16,7 @@ const MenuItemRecipe_entity_1 = require("../MenuItemRecipe/MenuItemRecipe.entity
 let IntermediateIngredient = class IntermediateIngredient {
 };
 __decorate([
-    typeorm_1.Column('uuid', {
-        nullable: false,
-        primary: true,
-        name: 'id',
-    }),
+    typeorm_1.PrimaryGeneratedColumn('uuid'),
     __metadata("design:type", String)
 ], IntermediateIngredient.prototype, "id", void 0);
 __decorate([

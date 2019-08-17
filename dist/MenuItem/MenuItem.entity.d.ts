@@ -1,4 +1,4 @@
-import { MenuItemCategory } from '../MenuItemCategory/MenuItemCategory.entity';
+import { MenuItemCategory } from '../menu-item-category/menu-item-category.entity';
 import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 export declare class MenuItem {
     id: string;

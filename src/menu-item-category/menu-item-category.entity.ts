@@ -18,11 +18,7 @@ import { MenuItem } from '../MenuItem/MenuItem.entity';
 @Entity('MenuItemCategory', { schema: 'public' })
 @Index('unique_category', ['name'], { unique: true })
 export class MenuItemCategory {
-  @Column('uuid', {
-    nullable: false,
-    primary: true,
-    name: 'id',
-  })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column('character varying', {

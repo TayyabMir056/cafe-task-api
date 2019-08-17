@@ -2073,8 +2073,56 @@
         "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": {
+        "version": "cf822dd2323414099be0696fdfbec8a9e70ceaee4c2b4af3d1c5f2c8159da154",
+        "signature": "859ec7f072cc1e4c8ac5d7d185ce7fcc08659b42aa86f22322852e68ab443952"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": {
+        "version": "feb5a5655d23acfa7ecb7e9d1a361ad1319d9768a307f7211085d9212d440195",
+        "signature": "a231047c55923b25645cc4159fd8bc706e662edb02b83a06e4e6550d5643b17e"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": {
+        "version": "382b8d5231b16ac8bc08bbac948ff750b407bfb04753b10a1755d0913ac85ebd",
+        "signature": "af5a6e5266fa7fd369a7343a5385e990e79978a287e57390dfbeaca894bc62e1"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": {
+        "version": "781784bfbe5cf8857366c8ad574f46441e92c081eaa21bc2ee3b7dd2c77a27e7",
+        "signature": "3c082a2d0aa30a5f7d1a083fe05ba512de87315fc0b0fda3ef3715665f006d61"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts": {
+        "version": "13a3f3c7e66dd281b8036948cdd8d2abf6ac896a2a326942a52a62cb53753c3f",
+        "signature": "756e84567f7b8489cc19ddff76114d1a35191794b95ba9f82b4dbda28f782786"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": {
+        "version": "b9a6c0b7a25d11d77f5299fc2cff03deb09c0bbbd36ee8ba0627fac0e3fe7a46",
+        "signature": "471df4feaebbd4cb3a5df1d45c65d02e6864c4bb6fc8428db4b28d317a3d32b9"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": {
+        "version": "7b49b1e721435b38a514b30f087308db868445695bad35e27c92b6a3f1693192",
+        "signature": "817319fbde5da9dd6ecc85566f70def24c44adf5672aa67762c6cd5d330d86a4"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts": {
+        "version": "830754f228fbbb0759130988d944e4a08e130bfa3ac8c716fccd0b389d5972c0",
+        "signature": "418689cc92990e41758597df7aaa19ec1c9dc6e298a69e0e455855f876ea7e8e"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.dto.ts": {
+        "version": "0d3f0e6d4a17f9aee26eafe020a504973c0f0e1e10427f369498bb52d2c95b22",
+        "signature": "8c9b4b6a85018f296d2bc328c81a05e50a9fd917abf191f8c76f406140045529"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts": {
+        "version": "75a3fdb72ab8ce6a2a5f2813d2ed1828706cfe2c6545552bca57048153335123",
+        "signature": "d968fad93d9362b50f03cbb2a6fad9249fa0e6e9d072cf5fe759e393c7b24ddf"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.controller.ts": {
+        "version": "b5ce26f4c16e16292e38f6b18d73c5a90aa7fca6319025dfc96dac6db364461d",
+        "signature": "c52c9497bae9e3951495a75726800e0a3b097f49d09ae5a95b30df2e10116046"
+      },
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.module.ts": {
+        "version": "6d2749123a4a00e2136369f34a9bfdb272bf7776da99bf4c035190a768e8bc31",
+        "signature": "8452e5bcee16dcde9a0b72a46c52579f7e1812be9856923efbc6f1c1ad6bf6c8"
+      },
       "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts": {
-        "version": "bb4c25c2fe86fcca4914d62c4088bcc18b499390bff0bf90bc5527d4caec33ce",
+        "version": "0179d07b15dbc4a5222a353ebd25078c3c910a7627ac1b3110f57c823b2272d1",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -2186,40 +2234,8 @@
         "signature": "2608cfd623840916e664e68c3dc5eb4347ccae822f808d899bf00e73cbab2bfe"
       },
       "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts": {
-        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
+        "version": "41fd6bbb5240c0ee9950cc29095d8bef326a78206ce09fda89fcb60b59fae5fd",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts": {
-        "version": "13a3f3c7e66dd281b8036948cdd8d2abf6ac896a2a326942a52a62cb53753c3f",
-        "signature": "756e84567f7b8489cc19ddff76114d1a35191794b95ba9f82b4dbda28f782786"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": {
-        "version": "b28b45b86e56c785c52b039aa814fa61bcf27b40e4c62a9d49a1cfc6c187b972",
-        "signature": "859ec7f072cc1e4c8ac5d7d185ce7fcc08659b42aa86f22322852e68ab443952"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts": {
-        "version": "7ee9effd65f5b0b29a428bb713ca8745b28726889ab22b0c96e67f6b3ee3bc14",
-        "signature": "418689cc92990e41758597df7aaa19ec1c9dc6e298a69e0e455855f876ea7e8e"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": {
-        "version": "bf0adfb0acef8a7647690871e41ceac6950dab756d2581510df2cd8931c52a4e",
-        "signature": "872f288c0e8c697178ad5d8a9b3f8cd577d48b4b70f3c2644f6bc785069724b5"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": {
-        "version": "d7b55a82e55b630b30100974df3fcdee9eb40de253d556ca81330d238e696ec6",
-        "signature": "471df4feaebbd4cb3a5df1d45c65d02e6864c4bb6fc8428db4b28d317a3d32b9"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": {
-        "version": "80a1db340231504065b1f98bffb74b0f1a78f72896155c52b91a25b27c58f2a1",
-        "signature": "3c082a2d0aa30a5f7d1a083fe05ba512de87315fc0b0fda3ef3715665f006d61"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": {
-        "version": "68567a588acfb0c2bfd68a0cb92c3e97ab484d1842caf33955974f71ddd5f440",
-        "signature": "af5a6e5266fa7fd369a7343a5385e990e79978a287e57390dfbeaca894bc62e1"
-      },
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": {
-        "version": "c3278ce24968f02b6351d4c614c3c0e295514d27edd5c4dac9be3800edcfcbbe",
-        "signature": "a231047c55923b25645cc4159fd8bc706e662edb02b83a06e4e6550d5643b17e"
       },
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@babel/types/lib/index.d.ts": {
         "version": "bc12492fa90cd2ad3f73c10efa597503dbf59ebac0e3c9728cc10adaad6b0b87",
@@ -5641,11 +5657,98 @@
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.dto.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.dto.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.controller.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.dto.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.module.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.controller.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.controller.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.service.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.module.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5836,62 +5939,6 @@
       "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -9329,6 +9376,47 @@
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/typeorm/index.d.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.dto.ts"
+      ],
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.controller.ts": [
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts",
+        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.dto.ts"
+      ],
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/index.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/common/interfaces/index.d.ts",
@@ -9512,37 +9600,6 @@
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts"
-      ],
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts": [
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
-        "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts"
       ],
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@babel/types/lib/index.d.ts": [
         "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/node/util.d.ts",
@@ -10209,7 +10266,15 @@
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/dist/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/typeorm/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.entity.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.dto.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/adapters/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/constants.d.ts",
@@ -10237,15 +10302,6 @@
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/reflector.service.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/services/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@nestjs/core/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/ingredienttype/ingredienttype.enum.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredientrecipe/intermediateingredientrecipe.entity.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemcategory/menuitemcategory.entity.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitem/menuitem.entity.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menuitemrecipe/menuitemrecipe.entity.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/inventoryingredient/inventoryingredient.entity.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/priceunit/priceunit.entity.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/src/intermediateingredient/intermediateingredient.entity.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@babel/types/lib/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/babel__generator/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/babel__traverse/index.d.ts",
@@ -10272,7 +10328,12 @@
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/superagent/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/supertest/index.d.ts",
       "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/yargs-parser/index.d.ts",
-      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/yargs/index.d.ts"
+      "d:/tayyab/afiniti task/backend/cafe-task-api/node_modules/@types/yargs/index.d.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.service.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.controller.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/menu-item-category/menu-item-category.module.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/app.module.ts",
+      "d:/tayyab/afiniti task/backend/cafe-task-api/src/main.ts"
     ]
   },
   "version": "3.4.3"
