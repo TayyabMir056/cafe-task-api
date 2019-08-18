@@ -11,6 +11,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const menu_item_category_module_1 = require("./menu-item-category/menu-item-category.module");
+const price_unit_module_1 = require("./price-unit/price-unit.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -28,6 +29,7 @@ AppModule = __decorate([
                 logging: true,
             }),
             menu_item_category_module_1.MenuItemCategoryModule,
+            price_unit_module_1.PriceUnitModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

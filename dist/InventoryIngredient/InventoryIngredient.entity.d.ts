@@ -1,4 +1,4 @@
-import { PriceUnit } from '../PriceUnit/PriceUnit.entity';
+import { PriceUnit } from '../price-unit/price-unit.entity';
 import { IntermediateIngredientRecipe } from '../IntermediateIngredientRecipe/IntermediateIngredientRecipe.entity';
 import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 export declare class InventoryIngredient {

@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const PriceUnit_entity_1 = require("../PriceUnit/PriceUnit.entity");
+const price_unit_entity_1 = require("../price-unit/price-unit.entity");
 const IntermediateIngredientRecipe_entity_1 = require("../IntermediateIngredientRecipe/IntermediateIngredientRecipe.entity");
 const MenuItemRecipe_entity_1 = require("../MenuItemRecipe/MenuItemRecipe.entity");
 let IntermediateIngredient = class IntermediateIngredient {
@@ -36,9 +36,9 @@ __decorate([
     __metadata("design:type", Number)
 ], IntermediateIngredient.prototype, "cost", void 0);
 __decorate([
-    typeorm_1.ManyToOne(type => PriceUnit_entity_1.PriceUnit, priceUnit => priceUnit.intermediateIngredients, { nullable: false }),
+    typeorm_1.ManyToOne(type => price_unit_entity_1.PriceUnit, priceUnit => priceUnit.intermediateIngredients, { nullable: false }),
     typeorm_1.JoinColumn({ name: 'priceUnit' }),
-    __metadata("design:type", PriceUnit_entity_1.PriceUnit)
+    __metadata("design:type", price_unit_entity_1.PriceUnit)
 ], IntermediateIngredient.prototype, "priceUnit", void 0);
 __decorate([
     typeorm_1.OneToMany(type => IntermediateIngredientRecipe_entity_1.IntermediateIngredientRecipe, intermediateIngredientRecipe => intermediateIngredientRecipe.intermediateIngredient),
