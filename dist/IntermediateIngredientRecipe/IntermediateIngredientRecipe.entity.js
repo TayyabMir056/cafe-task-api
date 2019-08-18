@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const IntermediateIngredient_entity_1 = require("../IntermediateIngredient/IntermediateIngredient.entity");
+const intermediate_ingredient_entity_1 = require("../intermediate-ingredient/intermediate-ingredient.entity");
 const inventory_ingredient_entity_1 = require("../inventory-ingredient/inventory-ingredient.entity");
 let IntermediateIngredientRecipe = class IntermediateIngredientRecipe {
 };
@@ -19,9 +19,9 @@ __decorate([
     __metadata("design:type", String)
 ], IntermediateIngredientRecipe.prototype, "id", void 0);
 __decorate([
-    typeorm_1.ManyToOne(type => IntermediateIngredient_entity_1.IntermediateIngredient, intermediateIngredient => intermediateIngredient.intermediateIngredientRecipes, { nullable: false }),
+    typeorm_1.ManyToOne(type => intermediate_ingredient_entity_1.IntermediateIngredient, intermediateIngredient => intermediateIngredient.intermediateIngredientRecipes, { nullable: false }),
     typeorm_1.JoinColumn({ name: 'intermediateIngredient_id' }),
-    __metadata("design:type", IntermediateIngredient_entity_1.IntermediateIngredient)
+    __metadata("design:type", intermediate_ingredient_entity_1.IntermediateIngredient)
 ], IntermediateIngredientRecipe.prototype, "intermediateIngredient", void 0);
 __decorate([
     typeorm_1.ManyToOne(type => inventory_ingredient_entity_1.InventoryIngredient, inventoryIngredient => inventoryIngredient.intermediateIngredientRecipes, { nullable: false }),

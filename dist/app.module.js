@@ -14,6 +14,7 @@ const menu_item_category_module_1 = require("./menu-item-category/menu-item-cate
 const price_unit_module_1 = require("./price-unit/price-unit.module");
 const menu_item_module_1 = require("./menu-item/menu-item.module");
 const inventory_ingredient_module_1 = require("./inventory-ingredient/inventory-ingredient.module");
+const intermediate_ingredient_module_1 = require("./intermediate-ingredient/intermediate-ingredient.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -34,6 +35,7 @@ AppModule = __decorate([
             price_unit_module_1.PriceUnitModule,
             menu_item_module_1.MenuItemModule,
             inventory_ingredient_module_1.InventoryIngredientModule,
+            intermediate_ingredient_module_1.IntermediateIngredientModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

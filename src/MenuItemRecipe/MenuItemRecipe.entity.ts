@@ -15,7 +15,7 @@ import {
 } from 'typeorm';
 import { MenuItem } from '../menu-item/menu-item.entity';
 import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
-import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient.entity';
+import { IntermediateIngredient } from '../intermediate-ingredient/intermediate-ingredient.entity';
 import { IngredientType } from 'src/IngredientType/IngredientType.enum';
 
 @Entity('MenuItemRecipe', { schema: 'public' })

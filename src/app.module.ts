@@ -7,6 +7,7 @@ import { MenuItemCategoryService } from './menu-item-category/menu-item-category
 import { PriceUnitModule } from './price-unit/price-unit.module';
 import { MenuItemModule } from './menu-item/menu-item.module';
 import { InventoryIngredientModule } from './inventory-ingredient/inventory-ingredient.module';
+import { IntermediateIngredientModule } from './intermediate-ingredient/intermediate-ingredient.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -24,6 +25,7 @@ import { InventoryIngredientModule } from './inventory-ingredient/inventory-ingr
     PriceUnitModule,
     MenuItemModule,
     InventoryIngredientModule,
+    IntermediateIngredientModule,
   ],
   controllers: [AppController],
   providers: [AppService],

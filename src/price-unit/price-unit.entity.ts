@@ -13,7 +13,7 @@ import {
   PrimaryGeneratedColumn,
   RelationId,
 } from 'typeorm';
-import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient.entity';
+import { IntermediateIngredient } from '../intermediate-ingredient/intermediate-ingredient.entity';
 import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
 
 @Entity('PriceUnit', { schema: 'public' })

@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const IntermediateIngredient_entity_1 = require("../IntermediateIngredient/IntermediateIngredient.entity");
+const intermediate_ingredient_entity_1 = require("../intermediate-ingredient/intermediate-ingredient.entity");
 const inventory_ingredient_entity_1 = require("../inventory-ingredient/inventory-ingredient.entity");
 let PriceUnit = class PriceUnit {
 };
@@ -26,7 +26,7 @@ __decorate([
     __metadata("design:type", String)
 ], PriceUnit.prototype, "name", void 0);
 __decorate([
-    typeorm_1.OneToMany(type => IntermediateIngredient_entity_1.IntermediateIngredient, intermediateIngredient => intermediateIngredient.priceUnit),
+    typeorm_1.OneToMany(type => intermediate_ingredient_entity_1.IntermediateIngredient, intermediateIngredient => intermediateIngredient.priceUnit),
     __metadata("design:type", Array)
 ], PriceUnit.prototype, "intermediateIngredients", void 0);
 __decorate([
