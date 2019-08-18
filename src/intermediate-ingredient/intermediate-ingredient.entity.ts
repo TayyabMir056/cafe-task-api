@@ -15,7 +15,7 @@ import {
 } from 'typeorm';
 import { PriceUnit } from '../price-unit/price-unit.entity';
 import { IntermediateIngredientRecipe } from '../intermediate-ingredient-recipe/intermediate-ingredient-recipe.entity';
-import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
+import { MenuItemRecipe } from '../menu-item-recipe/menu-item-recipe.entity';
 
 @Entity('IntermediateIngredient', { schema: 'public' })
 @Index('intermediate_ingredients_name_key', ['name'], { unique: true })

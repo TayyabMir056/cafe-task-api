@@ -1,5 +1,5 @@
 import { MenuItemCategory } from '../menu-item-category/menu-item-category.entity';
-import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
+import { MenuItemRecipe } from '../menu-item-recipe/menu-item-recipe.entity';
 export declare class MenuItem {
     id: string;
     name: string;

@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const menu_item_category_entity_1 = require("../menu-item-category/menu-item-category.entity");
-const MenuItemRecipe_entity_1 = require("../MenuItemRecipe/MenuItemRecipe.entity");
+const menu_item_recipe_entity_1 = require("../menu-item-recipe/menu-item-recipe.entity");
 let MenuItem = class MenuItem {
 };
 __decorate([
@@ -46,7 +46,7 @@ __decorate([
     __metadata("design:type", Number)
 ], MenuItem.prototype, "cost", void 0);
 __decorate([
-    typeorm_1.OneToMany(type => MenuItemRecipe_entity_1.MenuItemRecipe, menuItemRecipe => menuItemRecipe.menuItem),
+    typeorm_1.OneToMany(type => menu_item_recipe_entity_1.MenuItemRecipe, menuItemRecipe => menuItemRecipe.menuItem),
     __metadata("design:type", Array)
 ], MenuItem.prototype, "menuItemRecipes", void 0);
 MenuItem = __decorate([

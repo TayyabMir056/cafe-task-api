@@ -14,7 +14,7 @@ import {
   RelationId,
 } from 'typeorm';
 import { MenuItemCategory } from '../menu-item-category/menu-item-category.entity';
-import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
+import { MenuItemRecipe } from '../menu-item-recipe/menu-item-recipe.entity';
 
 @Entity('MenuItem', { schema: 'public' })
 @Index('unique_menu_item', ['name'], { unique: true })

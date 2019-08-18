@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const price_unit_entity_1 = require("../price-unit/price-unit.entity");
 const intermediate_ingredient_recipe_entity_1 = require("../intermediate-ingredient-recipe/intermediate-ingredient-recipe.entity");
-const MenuItemRecipe_entity_1 = require("../MenuItemRecipe/MenuItemRecipe.entity");
+const menu_item_recipe_entity_1 = require("../menu-item-recipe/menu-item-recipe.entity");
 let InventoryIngredient = class InventoryIngredient {
 };
 __decorate([
@@ -46,7 +46,7 @@ __decorate([
     __metadata("design:type", Array)
 ], InventoryIngredient.prototype, "intermediateIngredientRecipes", void 0);
 __decorate([
-    typeorm_1.OneToMany(type => MenuItemRecipe_entity_1.MenuItemRecipe, menuItemRecipe => menuItemRecipe.inventoryIngredient),
+    typeorm_1.OneToMany(type => menu_item_recipe_entity_1.MenuItemRecipe, menuItemRecipe => menuItemRecipe.inventoryIngredient),
     __metadata("design:type", Array)
 ], InventoryIngredient.prototype, "menuItemRecipes", void 0);
 InventoryIngredient = __decorate([
