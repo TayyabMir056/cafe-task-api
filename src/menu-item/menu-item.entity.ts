@@ -37,16 +37,14 @@ export class MenuItem {
   @JoinColumn({ name: 'category' })
   category: MenuItemCategory | null;
 
-  @Column('double precision', {
+  @Column('decimal', {
     nullable: false,
-    precision: 53,
     name: 'sellingPrice',
   })
   sellingPrice: number;
 
-  @Column('double precision', {
+  @Column('decimal', {
     nullable: false,
-    precision: 53,
     name: 'cost',
   })
   cost: number;

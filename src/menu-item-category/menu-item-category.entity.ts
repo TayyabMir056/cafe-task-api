@@ -12,18 +12,18 @@ import {
   PrimaryColumn,
   PrimaryGeneratedColumn,
   RelationId,
+  Unique,
 } from 'typeorm';
 import { MenuItem } from '../menu-item/menu-item.entity';
 
 @Entity('MenuItemCategory', { schema: 'public' })
-@Index('unique_category', ['name'], { unique: true })
+//@Unique(['name'])
 export class MenuItemCategory {
-  @PrimaryGeneratedColumn('uuid')
-  id: string;
+  @PrimaryGeneratedColumn()
+  id: number;
 
   @Column('character varying', {
     nullable: false,
-    unique: true,
     length: 20,
     name: 'name',
   })

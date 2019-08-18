@@ -22,16 +22,16 @@ export class MenuItemCategoryService {
     return data;
   }
 
-  async read(id: string) {
-    return await this.categoryRepository.findOne({ where: { id } });
+  async read(id: number) {
+    return await this.categoryRepository.findOne(id);
   }
 
   async update(id: string, data: Partial<MenuItemCategoryDTO>) {
-    await this.categoryRepository.update({ id }, data);
-    return await this.categoryRepository.findOne({ where: { id } });
+    await this.categoryRepository.update(id, data);
+    return await this.categoryRepository.findOne(id);
   }
   async destroy(id: string) {
-    await this.categoryRepository.delete({ id });
+    await this.categoryRepository.delete(id);
     return { deleted: true };
   }
 }

@@ -29,14 +29,14 @@ let MenuItemCategoryService = class MenuItemCategoryService {
         return data;
     }
     async read(id) {
-        return await this.categoryRepository.findOne({ where: { id } });
+        return await this.categoryRepository.findOne(id);
     }
     async update(id, data) {
-        await this.categoryRepository.update({ id }, data);
-        return await this.categoryRepository.findOne({ where: { id } });
+        await this.categoryRepository.update(id, data);
+        return await this.categoryRepository.findOne(id);
     }
     async destroy(id) {
-        await this.categoryRepository.delete({ id });
+        await this.categoryRepository.delete(id);
         return { deleted: true };
     }
 };

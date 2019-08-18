@@ -37,9 +37,8 @@ __decorate([
     __metadata("design:type", intermediate_ingredient_entity_1.IntermediateIngredient)
 ], MenuItemRecipe.prototype, "intermediateIngredient", void 0);
 __decorate([
-    typeorm_1.Column('double precision', {
+    typeorm_1.Column('decimal', {
         nullable: false,
-        precision: 53,
         name: 'quantity',
     }),
     __metadata("design:type", Number)

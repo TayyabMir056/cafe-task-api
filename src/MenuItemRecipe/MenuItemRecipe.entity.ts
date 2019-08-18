@@ -45,9 +45,8 @@ export class MenuItemRecipe {
   @JoinColumn({ name: 'intermediateIngredient_id' })
   intermediateIngredient: IntermediateIngredient | null;
 
-  @Column('double precision', {
+  @Column('decimal', {
     nullable: false,
-    precision: 53,
     name: 'quantity',
   })
   quantity: number;

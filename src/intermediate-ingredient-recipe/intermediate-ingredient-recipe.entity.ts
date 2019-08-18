@@ -12,11 +12,13 @@ import {
   PrimaryColumn,
   PrimaryGeneratedColumn,
   RelationId,
+  Unique,
 } from 'typeorm';
 import { IntermediateIngredient } from '../intermediate-ingredient/intermediate-ingredient.entity';
 import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
 
 @Entity('IntermediateIngredientRecipe', { schema: 'public' })
+@Unique(['intermediateIngredient', 'inventoryIngredient'])
 export class IntermediateIngredientRecipe {
   @PrimaryGeneratedColumn('uuid')
   id: string;
@@ -38,9 +40,8 @@ export class IntermediateIngredientRecipe {
   @JoinColumn({ name: 'inventoryIngredient_id' })
   inventoryIngredient: InventoryIngredient | null;
 
-  @Column('double precision', {
+  @Column('decimal', {
     nullable: false,
-    precision: 53,
     name: 'quantity',
   })
   quantity: number;

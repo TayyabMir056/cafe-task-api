@@ -25,7 +25,7 @@ export class MenuItemCategoryController {
   }
 
   @Get(':id')
-  getCategoryById(@Param('id') id: string) {
+  getCategoryById(@Param('id') id: number) {
     return this.menuItemCategoryService.read(id);
   }
 

@@ -8,6 +8,7 @@ import { PriceUnitModule } from './price-unit/price-unit.module';
 import { MenuItemModule } from './menu-item/menu-item.module';
 import { InventoryIngredientModule } from './inventory-ingredient/inventory-ingredient.module';
 import { IntermediateIngredientModule } from './intermediate-ingredient/intermediate-ingredient.module';
+import { IntermediateIngredientRecipeModule } from './intermediate-ingredient-recipe/intermediate-ingredient-recipe.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -26,6 +27,7 @@ import { IntermediateIngredientModule } from './intermediate-ingredient/intermed
     MenuItemModule,
     InventoryIngredientModule,
     IntermediateIngredientModule,
+    IntermediateIngredientRecipeModule,
   ],
   controllers: [AppController],
   providers: [AppService],

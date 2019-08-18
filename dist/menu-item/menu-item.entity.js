@@ -32,17 +32,15 @@ __decorate([
     __metadata("design:type", menu_item_category_entity_1.MenuItemCategory)
 ], MenuItem.prototype, "category", void 0);
 __decorate([
-    typeorm_1.Column('double precision', {
+    typeorm_1.Column('decimal', {
         nullable: false,
-        precision: 53,
         name: 'sellingPrice',
     }),
     __metadata("design:type", Number)
 ], MenuItem.prototype, "sellingPrice", void 0);
 __decorate([
-    typeorm_1.Column('double precision', {
+    typeorm_1.Column('decimal', {
         nullable: false,
-        precision: 53,
         name: 'cost',
     }),
     __metadata("design:type", Number)

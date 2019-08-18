@@ -14,7 +14,7 @@ import {
   RelationId,
 } from 'typeorm';
 import { PriceUnit } from '../price-unit/price-unit.entity';
-import { IntermediateIngredientRecipe } from '../IntermediateIngredientRecipe/IntermediateIngredientRecipe.entity';
+import { IntermediateIngredientRecipe } from '../intermediate-ingredient-recipe/intermediate-ingredient-recipe.entity';
 import { MenuItemRecipe } from '../MenuItemRecipe/MenuItemRecipe.entity';
 
 @Entity('IntermediateIngredient', { schema: 'public' })
@@ -30,9 +30,8 @@ export class IntermediateIngredient {
   })
   name: string;
 
-  @Column('double precision', {
+  @Column('decimal', {
     nullable: false,
-    precision: 53,
     name: 'cost',
   })
   cost: number;

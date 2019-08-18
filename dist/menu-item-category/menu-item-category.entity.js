@@ -14,13 +14,12 @@ const menu_item_entity_1 = require("../menu-item/menu-item.entity");
 let MenuItemCategory = class MenuItemCategory {
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn('uuid'),
-    __metadata("design:type", String)
+    typeorm_1.PrimaryGeneratedColumn(),
+    __metadata("design:type", Number)
 ], MenuItemCategory.prototype, "id", void 0);
 __decorate([
     typeorm_1.Column('character varying', {
         nullable: false,
-        unique: true,
         length: 20,
         name: 'name',
     }),
@@ -31,8 +30,7 @@ __decorate([
     __metadata("design:type", Array)
 ], MenuItemCategory.prototype, "menuItems", void 0);
 MenuItemCategory = __decorate([
-    typeorm_1.Entity('MenuItemCategory', { schema: 'public' }),
-    typeorm_1.Index('unique_category', ['name'], { unique: true })
+    typeorm_1.Entity('MenuItemCategory', { schema: 'public' })
 ], MenuItemCategory);
 exports.MenuItemCategory = MenuItemCategory;
 //# sourceMappingURL=menu-item-category.entity.js.map
