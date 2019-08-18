@@ -14,7 +14,7 @@ import {
   RelationId,
 } from 'typeorm';
 import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient.entity';
-import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient.entity';
+import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
 
 @Entity('IntermediateIngredientRecipe', { schema: 'public' })
 export class IntermediateIngredientRecipe {

@@ -10,8 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const MenuItem_entity_1 = require("../MenuItem/MenuItem.entity");
-const InventoryIngredient_entity_1 = require("../InventoryIngredient/InventoryIngredient.entity");
+const menu_item_entity_1 = require("../menu-item/menu-item.entity");
+const inventory_ingredient_entity_1 = require("../inventory-ingredient/inventory-ingredient.entity");
 const IntermediateIngredient_entity_1 = require("../IntermediateIngredient/IntermediateIngredient.entity");
 let MenuItemRecipe = class MenuItemRecipe {
 };
@@ -20,16 +20,16 @@ __decorate([
     __metadata("design:type", String)
 ], MenuItemRecipe.prototype, "id", void 0);
 __decorate([
-    typeorm_1.ManyToOne(type => MenuItem_entity_1.MenuItem, menuItem => menuItem.menuItemRecipes, {
+    typeorm_1.ManyToOne(type => menu_item_entity_1.MenuItem, menuItem => menuItem.menuItemRecipes, {
         nullable: false,
     }),
     typeorm_1.JoinColumn({ name: 'menuItem_id' }),
-    __metadata("design:type", MenuItem_entity_1.MenuItem)
+    __metadata("design:type", menu_item_entity_1.MenuItem)
 ], MenuItemRecipe.prototype, "menuItem", void 0);
 __decorate([
-    typeorm_1.ManyToOne(type => InventoryIngredient_entity_1.InventoryIngredient, inventoryIngredient => inventoryIngredient.menuItemRecipes, {}),
+    typeorm_1.ManyToOne(type => inventory_ingredient_entity_1.InventoryIngredient, inventoryIngredient => inventoryIngredient.menuItemRecipes, {}),
     typeorm_1.JoinColumn({ name: 'inventoryIngredient_id' }),
-    __metadata("design:type", InventoryIngredient_entity_1.InventoryIngredient)
+    __metadata("design:type", inventory_ingredient_entity_1.InventoryIngredient)
 ], MenuItemRecipe.prototype, "inventoryIngredient", void 0);
 __decorate([
     typeorm_1.ManyToOne(type => IntermediateIngredient_entity_1.IntermediateIngredient, intermediateIngredient => intermediateIngredient.menuItemRecipes, {}),

@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const MenuItem_entity_1 = require("../MenuItem/MenuItem.entity");
+const menu_item_entity_1 = require("../menu-item/menu-item.entity");
 let MenuItemCategory = class MenuItemCategory {
 };
 __decorate([
@@ -27,7 +27,7 @@ __decorate([
     __metadata("design:type", String)
 ], MenuItemCategory.prototype, "name", void 0);
 __decorate([
-    typeorm_1.OneToMany(type => MenuItem_entity_1.MenuItem, menuItem => menuItem.category),
+    typeorm_1.OneToMany(type => menu_item_entity_1.MenuItem, menuItem => menuItem.category),
     __metadata("design:type", Array)
 ], MenuItemCategory.prototype, "menuItems", void 0);
 MenuItemCategory = __decorate([

@@ -1,5 +1,5 @@
 import { IntermediateIngredient } from '../IntermediateIngredient/IntermediateIngredient.entity';
-import { InventoryIngredient } from '../InventoryIngredient/InventoryIngredient.entity';
+import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
 export declare class PriceUnit {
     id: string;
     name: string;
