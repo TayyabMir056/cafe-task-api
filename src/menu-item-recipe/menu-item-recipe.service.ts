@@ -16,9 +16,23 @@ export class MenuItemRecipeService {
   ) {}
 
   async getAll() {
-    return await this.menuItemRecipeRepository.find();
+    return await this.menuItemRecipeRepository.find({
+      relations: ['menuItem', 'intermediateIngredient', 'inventoryIngredient'],
+    });
   }
-  async readById(menuItem: MenuItem) {}
+  async readById(menuItem: Partial<MenuItem>) {
+    return await this.menuItemRecipeRepository.find({
+      join: {
+        alias: 'menuItemRecipe',
+        leftJoinAndSelect: {
+          MenuItem: 'menuItemRecipe.menuItem',
+          IntermediateIngredient: 'menuItemRecipe.intermediateIngredient',
+          InventoryIngredient: 'menuItemRecipe.inventoryIngredient',
+        },
+      },
+      where: { menuItem: menuItem },
+    });
+  }
 
   async createMenuItemRecipe(data: MenuItemRecipeDTO) {
     await data.recipe.forEach(ingredient => {
@@ -56,7 +70,7 @@ export class MenuItemRecipeService {
             quantity: ingredient.quantity,
           },
         );
-      } // If recipe item doesnot exst, create new
+      } // If recipe item doesnot exist, create new
       else {
         let menuItemRecipe = this.menuItemRecipeRepository.create({
           menuItem: data.menuItem,
@@ -68,5 +82,6 @@ export class MenuItemRecipeService {
         this.menuItemRecipeRepository.save(menuItemRecipe);
       }
     });
+    return this.readById(data.menuItem);
   }
 }

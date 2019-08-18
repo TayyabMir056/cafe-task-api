@@ -21,9 +21,23 @@ let MenuItemRecipeService = class MenuItemRecipeService {
         this.menuItemRecipeRepository = menuItemRecipeRepository;
     }
     async getAll() {
-        return await this.menuItemRecipeRepository.find();
+        return await this.menuItemRecipeRepository.find({
+            relations: ['menuItem', 'intermediateIngredient', 'inventoryIngredient'],
+        });
     }
-    async readById(menuItem) { }
+    async readById(menuItem) {
+        return await this.menuItemRecipeRepository.find({
+            join: {
+                alias: 'menuItemRecipe',
+                leftJoinAndSelect: {
+                    MenuItem: 'menuItemRecipe.menuItem',
+                    IntermediateIngredient: 'menuItemRecipe.intermediateIngredient',
+                    InventoryIngredient: 'menuItemRecipe.inventoryIngredient',
+                },
+            },
+            where: { menuItem: menuItem },
+        });
+    }
     async createMenuItemRecipe(data) {
         await data.recipe.forEach(ingredient => {
             let menuItemRecipe = this.menuItemRecipeRepository.create({
@@ -67,6 +81,7 @@ let MenuItemRecipeService = class MenuItemRecipeService {
                 this.menuItemRecipeRepository.save(menuItemRecipe);
             }
         });
+        return this.readById(data.menuItem);
     }
 };
 MenuItemRecipeService = __decorate([

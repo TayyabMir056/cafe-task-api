@@ -18,8 +18,12 @@ let MenuItemRecipeController = class MenuItemRecipeController {
     constructor(menuItemRecipeService) {
         this.menuItemRecipeService = menuItemRecipeService;
     }
-    getAllMenuItemRecipes() { }
-    getMenuItemRecipeById() { }
+    getAllMenuItemRecipes() {
+        return this.menuItemRecipeService.getAll();
+    }
+    getMenuItemRecipeById(menuItem_id) {
+        return this.menuItemRecipeService.readById({ id: menuItem_id });
+    }
     addnewMenuItemRecipe(data) {
         return this.menuItemRecipeService.createMenuItemRecipe(data);
     }
@@ -36,8 +40,9 @@ __decorate([
 ], MenuItemRecipeController.prototype, "getAllMenuItemRecipes", null);
 __decorate([
     common_1.Get(':menuItem_id'),
+    __param(0, common_1.Param('menuItem_id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], MenuItemRecipeController.prototype, "getMenuItemRecipeById", null);
 __decorate([

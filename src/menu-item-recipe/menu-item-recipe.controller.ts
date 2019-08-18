@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Put, Delete, Body } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Put,
+  Delete,
+  Body,
+  Param,
+} from '@nestjs/common';
 import { MenuItemRecipeService } from './menu-item-recipe.service';
 import { UpdateDateColumn } from 'typeorm';
 import { MenuItemRecipeDTO } from './menu-item-recipe.dto';
@@ -8,10 +16,14 @@ export class MenuItemRecipeController {
   constructor(private menuItemRecipeService: MenuItemRecipeService) {}
 
   @Get()
-  getAllMenuItemRecipes() {}
+  getAllMenuItemRecipes() {
+    return this.menuItemRecipeService.getAll();
+  }
 
   @Get(':menuItem_id')
-  getMenuItemRecipeById() {}
+  getMenuItemRecipeById(@Param('menuItem_id') menuItem_id: string) {
+    return this.menuItemRecipeService.readById({ id: menuItem_id });
+  }
 
   @Post()
   addnewMenuItemRecipe(@Body() data: MenuItemRecipeDTO) {
