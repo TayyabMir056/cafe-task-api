@@ -4,8 +4,17 @@ export declare class MenuItemRecipeController {
     private menuItemRecipeService;
     constructor(menuItemRecipeService: MenuItemRecipeService);
     getAllMenuItemRecipes(): Promise<import("./menu-item-recipe.entity").MenuItemRecipe[]>;
-    getMenuItemRecipeById(menuItem_id: string): Promise<import("./menu-item-recipe.entity").MenuItemRecipe[]>;
-    addnewMenuItemRecipe(data: MenuItemRecipeDTO): Promise<import("./menu-item-recipe.entity").MenuItemRecipe[]>;
-    updateMenuItemRecipe(data: MenuItemRecipeDTO): Promise<import("./menu-item-recipe.entity").MenuItemRecipe[]>;
+    getMenuItemRecipeById(menuItem_id: string): Promise<{
+        menuItem: Partial<import("../menu-item/menu-item.entity").MenuItem>;
+        recipe: any[];
+    }>;
+    addnewMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+        menuItem: Partial<import("../menu-item/menu-item.entity").MenuItem>;
+        recipe: any[];
+    }>;
+    updateMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+        menuItem: Partial<import("../menu-item/menu-item.entity").MenuItem>;
+        recipe: any[];
+    }>;
     deleteMenuItemRecipe(): void;
 }

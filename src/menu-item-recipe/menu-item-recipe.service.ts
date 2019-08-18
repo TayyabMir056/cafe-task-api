@@ -21,7 +21,7 @@ export class MenuItemRecipeService {
     });
   }
   async readById(menuItem: Partial<MenuItem>) {
-    return await this.menuItemRecipeRepository.find({
+    let menuItemRecipe = await this.menuItemRecipeRepository.find({
       join: {
         alias: 'menuItemRecipe',
         leftJoinAndSelect: {
@@ -32,6 +32,30 @@ export class MenuItemRecipeService {
       },
       where: { menuItem: menuItem },
     });
+
+    let recipe = [];
+    menuItemRecipe.forEach(recipeItem => {
+      recipe.push({
+        ingredient:
+          recipeItem.ingredientType == 2
+            ? recipeItem.intermediateIngredient.id
+            : recipeItem.inventoryIngredient.id,
+        ingredientName:
+          recipeItem.ingredientType == 1
+            ? recipeItem.inventoryIngredient.name
+            : recipeItem.intermediateIngredient.name,
+        ingredientType:
+          recipeItem.ingredientType == 1
+            ? 'Inventory Ingredient'
+            : 'Intermediate Ingredient',
+        quantity: recipeItem.quantity,
+      });
+    });
+
+    return {
+      menuItem: menuItem,
+      recipe: recipe,
+    };
   }
 
   async createMenuItemRecipe(data: MenuItemRecipeDTO) {

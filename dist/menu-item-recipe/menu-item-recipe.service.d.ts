@@ -6,7 +6,16 @@ export declare class MenuItemRecipeService {
     private menuItemRecipeRepository;
     constructor(menuItemRecipeRepository: Repository<MenuItemRecipe>);
     getAll(): Promise<MenuItemRecipe[]>;
-    readById(menuItem: Partial<MenuItem>): Promise<MenuItemRecipe[]>;
-    createMenuItemRecipe(data: MenuItemRecipeDTO): Promise<MenuItemRecipe[]>;
-    updateMenuItemRecipe(data: MenuItemRecipeDTO): Promise<MenuItemRecipe[]>;
+    readById(menuItem: Partial<MenuItem>): Promise<{
+        menuItem: Partial<MenuItem>;
+        recipe: any[];
+    }>;
+    createMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+        menuItem: Partial<MenuItem>;
+        recipe: any[];
+    }>;
+    updateMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+        menuItem: Partial<MenuItem>;
+        recipe: any[];
+    }>;
 }
