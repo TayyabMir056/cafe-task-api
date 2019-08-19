@@ -16,9 +16,11 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const intermediate_ingredient_recipe_entity_1 = require("./intermediate-ingredient-recipe.entity");
 const typeorm_2 = require("typeorm");
+const intermediate_ingredient_entity_1 = require("../intermediate-ingredient/intermediate-ingredient.entity");
 let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeService {
-    constructor(intermediateIngredientRecipeRespository) {
+    constructor(intermediateIngredientRecipeRespository, intermediateIngredientRespository) {
         this.intermediateIngredientRecipeRespository = intermediateIngredientRecipeRespository;
+        this.intermediateIngredientRespository = intermediateIngredientRespository;
     }
     async getAll() {
         return await this.intermediateIngredientRecipeRespository.find({
@@ -41,10 +43,10 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
             recipe.push({
                 inventoryIngredient: recipeItem.inventoryIngredient.id,
                 inventoryIngredient_name: recipeItem.inventoryIngredient.name,
+                inventoryIngredient_cost: recipeItem.inventoryIngredient.cost,
                 quantity: recipeItem.quantity,
             });
         });
-        console.log(recipe);
         return {
             intermediateIngredient: intermediateIngredient.id,
             recipe: recipe,
@@ -60,6 +62,7 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
             var itermediateIngredientRecipeItem = this.intermediateIngredientRecipeRespository.create(data);
             this.intermediateIngredientRecipeRespository.save(itermediateIngredientRecipeItem);
         });
+        this.updateIntermediateIngredientCost(intermediateIngredientRecipe.intermediateIngredient);
         return {
             recipeAddedForId: intermediateIngredientRecipe.intermediateIngredient,
         };
@@ -71,6 +74,7 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
                 inventoryIngredient: inventoryItemQuantity.inventoryIngredient,
             }, { quantity: inventoryItemQuantity.quantity });
         });
+        this.updateIntermediateIngredientCost(data.intermediateIngredient);
         return this.getRecipeByIntermediateIngredient(data.intermediateIngredient);
     }
     async deleteIntermediateIngredientRecipe(id) {
@@ -79,11 +83,24 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         });
         return { deleted: true };
     }
+    async updateIntermediateIngredientCost(intermediateIngredient) {
+        let recipe = await this.getRecipeByIntermediateIngredient(intermediateIngredient);
+        let cost = 0;
+        await recipe.recipe.forEach(recipeItem => {
+            cost =
+                cost + recipeItem['inventoryIngredient_cost'] * recipeItem['quantity'];
+        });
+        this.intermediateIngredientRespository.update(intermediateIngredient, {
+            cost,
+        });
+    }
 };
 IntermediateIngredientRecipeService = __decorate([
     common_1.Injectable(),
     __param(0, typeorm_1.InjectRepository(intermediate_ingredient_recipe_entity_1.IntermediateIngredientRecipe)),
-    __metadata("design:paramtypes", [typeorm_2.Repository])
+    __param(1, typeorm_1.InjectRepository(intermediate_ingredient_entity_1.IntermediateIngredient)),
+    __metadata("design:paramtypes", [typeorm_2.Repository,
+        typeorm_2.Repository])
 ], IntermediateIngredientRecipeService);
 exports.IntermediateIngredientRecipeService = IntermediateIngredientRecipeService;
 //# sourceMappingURL=intermediate-ingredient-recipe.service.js.map

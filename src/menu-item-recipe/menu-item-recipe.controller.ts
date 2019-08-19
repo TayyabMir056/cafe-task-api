@@ -35,8 +35,8 @@ export class MenuItemRecipeController {
     return this.menuItemRecipeService.updateMenuItemRecipe(data);
   }
 
-  @Delete(':menuItem_id')
-  deleteMenuItemRecipe(@Param('menuItem_id') menuItem_id: string) {
-    return this.menuItemRecipeService.delete({ id: menuItem_id });
+  @Delete(':id')
+  deleteMenuItemRecipe(@Param('id') id: string) {
+    return this.menuItemRecipeService.delete(id);
   }
 }

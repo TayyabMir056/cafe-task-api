@@ -4,7 +4,7 @@ import { IntermediateIngredientRecipe } from './intermediate-ingredient-recipe.e
 import { Repository } from 'typeorm';
 import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
 import { IntermediateIngredientRecipeDTO } from './intermediate-ingredient-recipe.dto';
-import { IntermediateIngredient } from 'src/intermediate-ingredient/intermediate-ingredient.entity';
+import { IntermediateIngredient } from '../intermediate-ingredient/intermediate-ingredient.entity';
 
 @Injectable()
 export class IntermediateIngredientRecipeService {
@@ -12,6 +12,10 @@ export class IntermediateIngredientRecipeService {
     @InjectRepository(IntermediateIngredientRecipe)
     private intermediateIngredientRecipeRespository: Repository<
       IntermediateIngredientRecipe
+    >,
+    @InjectRepository(IntermediateIngredient)
+    private intermediateIngredientRespository: Repository<
+      IntermediateIngredient
     >,
   ) {}
 
@@ -44,6 +48,7 @@ export class IntermediateIngredientRecipeService {
       recipe.push({
         inventoryIngredient: recipeItem.inventoryIngredient.id,
         inventoryIngredient_name: recipeItem.inventoryIngredient.name,
+        inventoryIngredient_cost: recipeItem.inventoryIngredient.cost,
         quantity: recipeItem.quantity,
       });
     });
@@ -74,6 +79,9 @@ export class IntermediateIngredientRecipeService {
         );
       },
     );
+    this.updateIntermediateIngredientCost(
+      intermediateIngredientRecipe.intermediateIngredient,
+    );
     return {
       recipeAddedForId: intermediateIngredientRecipe.intermediateIngredient,
     };
@@ -92,6 +100,7 @@ export class IntermediateIngredientRecipeService {
         { quantity: inventoryItemQuantity.quantity },
       );
     });
+    this.updateIntermediateIngredientCost(data.intermediateIngredient);
     return this.getRecipeByIntermediateIngredient(data.intermediateIngredient);
   }
 
@@ -100,5 +109,21 @@ export class IntermediateIngredientRecipeService {
       id,
     });
     return { deleted: true };
+  }
+
+  async updateIntermediateIngredientCost(
+    intermediateIngredient: IntermediateIngredient,
+  ) {
+    let recipe = await this.getRecipeByIntermediateIngredient(
+      intermediateIngredient,
+    );
+    let cost = 0;
+    await recipe.recipe.forEach(recipeItem => {
+      cost =
+        cost + recipeItem['inventoryIngredient_cost'] * recipeItem['quantity'];
+    });
+    this.intermediateIngredientRespository.update(intermediateIngredient, {
+      cost,
+    });
   }
 }

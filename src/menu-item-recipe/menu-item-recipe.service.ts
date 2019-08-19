@@ -4,15 +4,15 @@ import { InjectRepository } from '@nestjs/typeorm';
 
 import { MenuItemRecipe } from './menu-item-recipe.entity';
 import { MenuItemRecipeDTO } from './menu-item-recipe.dto';
-import { MenuItem } from 'src/menu-item/menu-item.entity';
-import { InventoryIngredient } from 'src/inventory-ingredient/inventory-ingredient.entity';
-import { IngredientType } from 'src/IngredientType/IngredientType.enum';
+import { MenuItem } from '../menu-item/menu-item.entity';
 
 @Injectable()
 export class MenuItemRecipeService {
   constructor(
     @InjectRepository(MenuItemRecipe)
     private menuItemRecipeRepository: Repository<MenuItemRecipe>,
+    @InjectRepository(MenuItem)
+    private menuItemRepository: Repository<MenuItem>,
   ) {}
 
   async getAll() {
@@ -49,6 +49,10 @@ export class MenuItemRecipeService {
             ? 'Inventory Ingredient'
             : 'Intermediate Ingredient',
         quantity: recipeItem.quantity,
+        ingredientCost:
+          recipeItem.ingredientType == 1
+            ? recipeItem.inventoryIngredient.cost
+            : recipeItem.intermediateIngredient.cost,
       });
     });
 
@@ -59,17 +63,7 @@ export class MenuItemRecipeService {
   }
 
   async createMenuItemRecipe(data: MenuItemRecipeDTO) {
-    await data.recipe.forEach(ingredient => {
-      let menuItemRecipe = this.menuItemRecipeRepository.create({
-        menuItem: data.menuItem,
-        intermediateIngredient: ingredient.intermediateIngredient,
-        inventoryIngredient: ingredient.inventoryIngredient,
-        ingredientType: ingredient.ingredientType,
-        quantity: ingredient.quantity,
-      });
-      this.menuItemRecipeRepository.save(menuItemRecipe);
-    });
-    return this.readById(data.menuItem);
+    return this.updateMenuItemRecipe(data);
   }
 
   async updateMenuItemRecipe(data: MenuItemRecipeDTO) {
@@ -106,11 +100,25 @@ export class MenuItemRecipeService {
         this.menuItemRecipeRepository.save(menuItemRecipe);
       }
     });
+    this.updateMenuItemCost(data.menuItem); //Update Menu Item cost after calculating from the recipe
     return this.readById(data.menuItem);
   }
 
-  async delete(menuItem: Partial<MenuItem>) {
-    await this.menuItemRecipeRepository.delete({ menuItem });
+  async delete(id: string) {
+    await this.menuItemRecipeRepository.delete({ id });
     return { deleted: true };
+  }
+
+  async updateMenuItemCost(menuItem: Partial<MenuItem>) {
+    let recipe = await this.readById(menuItem);
+    console.log('Updating cost...');
+    console.log(recipe);
+    let cost = 0;
+
+    await recipe.recipe.forEach(recipeItem => {
+      cost = cost + recipeItem['ingredientCost'] * recipeItem['quantity'];
+    });
+
+    await this.menuItemRepository.update(menuItem, { cost });
   }
 }

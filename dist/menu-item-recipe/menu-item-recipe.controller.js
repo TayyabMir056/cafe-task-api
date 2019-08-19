@@ -30,8 +30,8 @@ let MenuItemRecipeController = class MenuItemRecipeController {
     updateMenuItemRecipe(data) {
         return this.menuItemRecipeService.updateMenuItemRecipe(data);
     }
-    deleteMenuItemRecipe(menuItem_id) {
-        return this.menuItemRecipeService.delete({ id: menuItem_id });
+    deleteMenuItemRecipe(id) {
+        return this.menuItemRecipeService.delete(id);
     }
 };
 __decorate([
@@ -62,8 +62,8 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], MenuItemRecipeController.prototype, "updateMenuItemRecipe", null);
 __decorate([
-    common_1.Delete(':menuItem_id'),
-    __param(0, common_1.Param('menuItem_id')),
+    common_1.Delete(':id'),
+    __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)

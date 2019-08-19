@@ -11,11 +11,12 @@ const typeorm_1 = require("@nestjs/typeorm");
 const menu_item_recipe_controller_1 = require("./menu-item-recipe.controller");
 const menu_item_recipe_service_1 = require("./menu-item-recipe.service");
 const menu_item_recipe_entity_1 = require("./menu-item-recipe.entity");
+const menu_item_entity_1 = require("../menu-item/menu-item.entity");
 let MenuItemRecipeModule = class MenuItemRecipeModule {
 };
 MenuItemRecipeModule = __decorate([
     common_1.Module({
-        imports: [typeorm_1.TypeOrmModule.forFeature([menu_item_recipe_entity_1.MenuItemRecipe])],
+        imports: [typeorm_1.TypeOrmModule.forFeature([menu_item_recipe_entity_1.MenuItemRecipe, menu_item_entity_1.MenuItem])],
         controllers: [menu_item_recipe_controller_1.MenuItemRecipeController],
         providers: [menu_item_recipe_service_1.MenuItemRecipeService],
     })

@@ -16,7 +16,7 @@ export declare class MenuItemRecipeController {
         menuItem: Partial<import("../menu-item/menu-item.entity").MenuItem>;
         recipe: any[];
     }>;
-    deleteMenuItemRecipe(menuItem_id: string): Promise<{
+    deleteMenuItemRecipe(id: string): Promise<{
         deleted: boolean;
     }>;
 }
