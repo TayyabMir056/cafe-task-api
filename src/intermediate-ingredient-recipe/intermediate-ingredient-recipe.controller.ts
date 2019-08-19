@@ -25,9 +25,11 @@ export class IntermediateIngredientRecipeController {
   getRecipeByIntermediateIngredientId(
     @Param('intermediateIngredient_id') intermediateIngredient_id: string,
   ) {
-    this.intermediateIngredientRecipeService.getRecipeByIntermediateIngredient({
-      id: intermediateIngredient_id,
-    });
+    return this.intermediateIngredientRecipeService.getRecipeByIntermediateIngredient(
+      {
+        id: intermediateIngredient_id,
+      },
+    );
   }
 
   @Post()
@@ -50,12 +52,10 @@ export class IntermediateIngredientRecipeController {
     );
   }
 
-  @Delete(':intermediateIngredient_id')
-  deleteRecipeForIntermediateIngredient(
-    @Param('intermediateIngredient_id') intermediateIngredient_id: string,
-  ) {
+  @Delete(':id')
+  deleteRecipeForIntermediateIngredient(@Param('id') id: string) {
     this.intermediateIngredientRecipeService.deleteIntermediateIngredientRecipe(
-      { id: intermediateIngredient_id },
+      id,
     );
   }
 }

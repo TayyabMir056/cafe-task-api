@@ -18,4 +18,7 @@ export declare class MenuItemRecipeService {
         menuItem: Partial<MenuItem>;
         recipe: any[];
     }>;
+    delete(menuItem: Partial<MenuItem>): Promise<{
+        deleted: boolean;
+    }>;
 }

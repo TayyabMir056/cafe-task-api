@@ -26,9 +26,29 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         });
     }
     async getRecipeByIntermediateIngredient(intermediateIngredient) {
-        return this.intermediateIngredientRecipeRespository.find({
-            intermediateIngredient,
+        let intermediateIngredientRecipe = await this.intermediateIngredientRecipeRespository.find({
+            join: {
+                alias: 'intermediateIngredientRecipe',
+                leftJoinAndSelect: {
+                    InventoryIngredient: 'intermediateIngredientRecipe.inventoryIngredient',
+                    IntermediateIngredient: 'intermediateIngredientRecipe.intermediateIngredient',
+                },
+            },
+            where: { intermediateIngredient: intermediateIngredient },
         });
+        let recipe = [];
+        await intermediateIngredientRecipe.forEach(recipeItem => {
+            recipe.push({
+                inventoryIngredient: recipeItem.inventoryIngredient.id,
+                inventoryIngredient_name: recipeItem.inventoryIngredient.name,
+                quantity: recipeItem.quantity,
+            });
+        });
+        console.log(recipe);
+        return {
+            intermediateIngredient: intermediateIngredient.id,
+            recipe: recipe,
+        };
     }
     async createRecipeForIntermediateIngredient(intermediateIngredientRecipe) {
         intermediateIngredientRecipe.inventoryIngredientQuantities.forEach(inventoryItemQuantity => {
@@ -53,9 +73,9 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         });
         return this.getRecipeByIntermediateIngredient(data.intermediateIngredient);
     }
-    async deleteIntermediateIngredientRecipe(intermediateIngredient) {
+    async deleteIntermediateIngredientRecipe(id) {
         await this.intermediateIngredientRecipeRespository.delete({
-            intermediateIngredient,
+            id,
         });
         return { deleted: true };
     }

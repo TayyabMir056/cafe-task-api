@@ -108,4 +108,9 @@ export class MenuItemRecipeService {
     });
     return this.readById(data.menuItem);
   }
+
+  async delete(menuItem: Partial<MenuItem>) {
+    await this.menuItemRecipeRepository.delete({ menuItem });
+    return { deleted: true };
+  }
 }

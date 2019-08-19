@@ -22,7 +22,7 @@ let IntermediateIngredientRecipeController = class IntermediateIngredientRecipeC
         return this.intermediateIngredientRecipeService.getAll();
     }
     getRecipeByIntermediateIngredientId(intermediateIngredient_id) {
-        this.intermediateIngredientRecipeService.getRecipeByIntermediateIngredient({
+        return this.intermediateIngredientRecipeService.getRecipeByIntermediateIngredient({
             id: intermediateIngredient_id,
         });
     }
@@ -32,8 +32,8 @@ let IntermediateIngredientRecipeController = class IntermediateIngredientRecipeC
     updateRecipeForIntermediateIngredient(intermediateIngredient_id, data) {
         this.intermediateIngredientRecipeService.updateIntermediateIngredientRecipe(intermediateIngredient_id, data);
     }
-    deleteRecipeForIntermediateIngredient(intermediateIngredient_id) {
-        this.intermediateIngredientRecipeService.deleteIntermediateIngredientRecipe({ id: intermediateIngredient_id });
+    deleteRecipeForIntermediateIngredient(id) {
+        this.intermediateIngredientRecipeService.deleteIntermediateIngredientRecipe(id);
     }
 };
 __decorate([
@@ -65,8 +65,8 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], IntermediateIngredientRecipeController.prototype, "updateRecipeForIntermediateIngredient", null);
 __decorate([
-    common_1.Delete(':intermediateIngredient_id'),
-    __param(0, common_1.Param('intermediateIngredient_id')),
+    common_1.Delete(':id'),
+    __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)

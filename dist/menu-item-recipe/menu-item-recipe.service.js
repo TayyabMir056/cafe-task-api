@@ -102,6 +102,10 @@ let MenuItemRecipeService = class MenuItemRecipeService {
         });
         return this.readById(data.menuItem);
     }
+    async delete(menuItem) {
+        await this.menuItemRecipeRepository.delete({ menuItem });
+        return { deleted: true };
+    }
 };
 MenuItemRecipeService = __decorate([
     common_1.Injectable(),
