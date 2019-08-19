@@ -28,7 +28,7 @@ export class PriceUnitController {
   @Get(':id')
   getUnitById(@Param('id') id: string) {
     if (!validate(id)) {
-      //If Id is not valid then throw exceptio
+      //If Id is not valid then throw exception
       throw new HttpException('Not Valid id', HttpStatus.BAD_REQUEST);
     }
     return this.priceUnitService.read(id);

@@ -21,6 +21,12 @@ export class MenuItemCategoryService {
   }
 
   async create(data: Partial<MenuItemCategoryDTO>) {
+    const categoryExists = await this.categoryRepository.findOne({
+      name: data.name,
+    });
+    if (categoryExists) {
+      throw new HttpException('category already exists', HttpStatus.CONFLICT);
+    }
     const menuItemCategory = await this.categoryRepository.create(data);
     await this.categoryRepository.save(menuItemCategory);
     return data;
