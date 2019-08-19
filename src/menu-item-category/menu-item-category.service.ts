@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
@@ -13,7 +13,11 @@ export class MenuItemCategoryService {
   ) {}
 
   async showAll() {
-    return await this.categoryRepository.find();
+    const menuItemCategory = await this.categoryRepository.find();
+    if (!menuItemCategory) {
+      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+    }
+    return menuItemCategory;
   }
 
   async create(data: Partial<MenuItemCategoryDTO>) {
@@ -22,15 +26,27 @@ export class MenuItemCategoryService {
     return data;
   }
 
-  async read(id: number) {
-    return await this.categoryRepository.findOne(id);
+  async read(id: string) {
+    const menuItemCategory = await this.categoryRepository.findOne(id);
+    if (!menuItemCategory) {
+      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+    }
+    return menuItemCategory;
   }
 
   async update(id: string, data: Partial<MenuItemCategoryDTO>) {
+    const menuItemCategory = await this.categoryRepository.findOne({ id });
+    if (!menuItemCategory) {
+      throw new HttpException('Not Found', HttpStatus.NOT_FOUND);
+    }
     await this.categoryRepository.update(id, data);
     return await this.categoryRepository.findOne(id);
   }
   async destroy(id: string) {
+    const menuItemCategory = await this.categoryRepository.findOne({ id });
+    if (!menuItemCategory) {
+      throw new HttpException('Not Found', HttpStatus.NOT_FOUND);
+    }
     await this.categoryRepository.delete(id);
     return { deleted: true };
   }

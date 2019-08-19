@@ -6,12 +6,13 @@ import {
   Delete,
   Body,
   Param,
+  UsePipes,
 } from '@nestjs/common';
 
+import { ValidationPipe } from '../shared/validation.pipe';
 import { MenuItemCategoryService } from './menu-item-category.service';
 import { MenuItemCategoryDTO } from './menu-item-category.dto';
-
-@Controller('category')
+@Controller('categories')
 export class MenuItemCategoryController {
   constructor(private menuItemCategoryService: MenuItemCategoryService) {}
   @Get()
@@ -20,16 +21,19 @@ export class MenuItemCategoryController {
   }
 
   @Post()
-  addNewCategory(@Body() data: MenuItemCategoryDTO) {
+  @UsePipes(new ValidationPipe())
+  addNewCategory(@Body() data: Partial<MenuItemCategoryDTO>) {
     return this.menuItemCategoryService.create(data);
   }
 
   @Get(':id')
-  getCategoryById(@Param('id') id: number) {
+  @UsePipes(new ValidationPipe())
+  getCategoryById(@Param('id') id: string) {
     return this.menuItemCategoryService.read(id);
   }
 
   @Put(':id')
+  @UsePipes(new ValidationPipe())
   updateCategory(
     @Param('id') id: string,
     @Body() data: Partial<MenuItemCategoryDTO>,
@@ -38,6 +42,7 @@ export class MenuItemCategoryController {
   }
 
   @Delete(':id')
+  @UsePipes(new ValidationPipe())
   deleteCategory(@Param('id') id: string) {
     return this.menuItemCategoryService.destroy(id);
   }

@@ -1,6 +1,6 @@
 import { MenuItem } from '../menu-item/menu-item.entity';
 export declare class MenuItemCategory {
-    id: number;
+    id: string;
     name: string;
     menuItems: MenuItem[];
 }

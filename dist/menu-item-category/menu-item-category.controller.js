@@ -13,6 +13,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
+const validation_pipe_1 = require("../shared/validation.pipe");
 const menu_item_category_service_1 = require("./menu-item-category.service");
 let MenuItemCategoryController = class MenuItemCategoryController {
     constructor(menuItemCategoryService) {
@@ -42,6 +43,7 @@ __decorate([
 ], MenuItemCategoryController.prototype, "getAllCategories", null);
 __decorate([
     common_1.Post(),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -49,13 +51,15 @@ __decorate([
 ], MenuItemCategoryController.prototype, "addNewCategory", null);
 __decorate([
     common_1.Get(':id'),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], MenuItemCategoryController.prototype, "getCategoryById", null);
 __decorate([
     common_1.Put(':id'),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Param('id')),
     __param(1, common_1.Body()),
     __metadata("design:type", Function),
@@ -64,13 +68,14 @@ __decorate([
 ], MenuItemCategoryController.prototype, "updateCategory", null);
 __decorate([
     common_1.Delete(':id'),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], MenuItemCategoryController.prototype, "deleteCategory", null);
 MenuItemCategoryController = __decorate([
-    common_1.Controller('category'),
+    common_1.Controller('categories'),
     __metadata("design:paramtypes", [menu_item_category_service_1.MenuItemCategoryService])
 ], MenuItemCategoryController);
 exports.MenuItemCategoryController = MenuItemCategoryController;

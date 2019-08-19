@@ -1,4 +1,4 @@
-export interface MenuItemCategoryDTO {
-    id: number;
+export declare class MenuItemCategoryDTO {
+    id: string;
     name: string;
 }

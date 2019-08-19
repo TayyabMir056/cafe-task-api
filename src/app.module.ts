@@ -1,3 +1,5 @@
+import { APP_FILTER } from '@nestjs/core';
+
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
@@ -10,6 +12,7 @@ import { InventoryIngredientModule } from './inventory-ingredient/inventory-ingr
 import { IntermediateIngredientModule } from './intermediate-ingredient/intermediate-ingredient.module';
 import { IntermediateIngredientRecipeModule } from './intermediate-ingredient-recipe/intermediate-ingredient-recipe.module';
 import { MenuItemRecipeModule } from './menu-item-recipe/menu-item-recipe.module';
+import { HttpErrorFilter } from './shared/http-error.filter';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -32,6 +35,12 @@ import { MenuItemRecipeModule } from './menu-item-recipe/menu-item-recipe.module
     MenuItemRecipeModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    AppService,
+    {
+      provide: APP_FILTER,
+      useClass: HttpErrorFilter,
+    },
+  ],
 })
 export class AppModule {}

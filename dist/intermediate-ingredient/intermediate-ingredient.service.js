@@ -21,12 +21,20 @@ let IntermediateIngredientService = class IntermediateIngredientService {
         this.intermediateIngredientRepository = intermediateIngredientRepository;
     }
     async getAll() {
-        return await this.intermediateIngredientRepository.find({
+        const intermediateIngredient = await this.intermediateIngredientRepository.find({
             relations: ['priceUnit'],
         });
+        if (!intermediateIngredient) {
+            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return intermediateIngredient;
     }
     async read(id) {
-        return await this.intermediateIngredientRepository.findOne({ id }, { relations: ['priceUnit'] });
+        const intermediateIngredient = await this.intermediateIngredientRepository.findOne({ id }, { relations: ['priceUnit'] });
+        if (!intermediateIngredient) {
+            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return intermediateIngredient;
     }
     async create(data) {
         const intermediateIngredient = this.intermediateIngredientRepository.create(data);
@@ -35,10 +43,18 @@ let IntermediateIngredientService = class IntermediateIngredientService {
         return intermediateIngredient;
     }
     async update(id, data) {
+        const intermediateIngredient = await this.intermediateIngredientRepository.findOne({ id });
+        if (!intermediateIngredient) {
+            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.intermediateIngredientRepository.update({ id }, data);
         return this.read(id);
     }
     async delete(id) {
+        const intermediateIngredient = await this.intermediateIngredientRepository.findOne({ id });
+        if (!intermediateIngredient) {
+            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.intermediateIngredientRepository.delete({ id });
         return { deleted: true };
     }

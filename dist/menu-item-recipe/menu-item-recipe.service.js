@@ -63,7 +63,7 @@ let MenuItemRecipeService = class MenuItemRecipeService {
         };
     }
     async createMenuItemRecipe(data) {
-        return this.updateMenuItemRecipe(data);
+        return await this.updateMenuItemRecipe(data);
     }
     async updateMenuItemRecipe(data) {
         await data.recipe.forEach(async (ingredient) => {
@@ -75,7 +75,7 @@ let MenuItemRecipeService = class MenuItemRecipeService {
             });
             console.log(existingRecipe);
             if (existingRecipe) {
-                this.menuItemRecipeRepository.update({
+                await this.menuItemRecipeRepository.update({
                     menuItem: data.menuItem,
                     intermediateIngredient: ingredient.intermediateIngredient,
                     inventoryIngredient: ingredient.inventoryIngredient,
@@ -92,7 +92,7 @@ let MenuItemRecipeService = class MenuItemRecipeService {
                     ingredientType: ingredient.ingredientType,
                     quantity: ingredient.quantity,
                 });
-                this.menuItemRecipeRepository.save(menuItemRecipe);
+                await this.menuItemRecipeRepository.save(menuItemRecipe);
             }
         });
         this.updateMenuItemCost(data.menuItem);

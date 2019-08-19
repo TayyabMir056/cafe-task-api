@@ -14,8 +14,8 @@ const menu_item_entity_1 = require("../menu-item/menu-item.entity");
 let MenuItemCategory = class MenuItemCategory {
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn(),
-    __metadata("design:type", Number)
+    typeorm_1.PrimaryGeneratedColumn('uuid'),
+    __metadata("design:type", String)
 ], MenuItemCategory.prototype, "id", void 0);
 __decorate([
     typeorm_1.Column('character varying', {

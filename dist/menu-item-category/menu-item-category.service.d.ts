@@ -6,7 +6,7 @@ export declare class MenuItemCategoryService {
     constructor(categoryRepository: Repository<MenuItemCategory>);
     showAll(): Promise<MenuItemCategory[]>;
     create(data: Partial<MenuItemCategoryDTO>): Promise<Partial<MenuItemCategoryDTO>>;
-    read(id: number): Promise<MenuItemCategory>;
+    read(id: string): Promise<MenuItemCategory>;
     update(id: string, data: Partial<MenuItemCategoryDTO>): Promise<MenuItemCategory>;
     destroy(id: string): Promise<{
         deleted: boolean;

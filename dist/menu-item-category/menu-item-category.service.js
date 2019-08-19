@@ -21,7 +21,11 @@ let MenuItemCategoryService = class MenuItemCategoryService {
         this.categoryRepository = categoryRepository;
     }
     async showAll() {
-        return await this.categoryRepository.find();
+        const menuItemCategory = await this.categoryRepository.find();
+        if (!menuItemCategory) {
+            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return menuItemCategory;
     }
     async create(data) {
         const menuItemCategory = await this.categoryRepository.create(data);
@@ -29,13 +33,25 @@ let MenuItemCategoryService = class MenuItemCategoryService {
         return data;
     }
     async read(id) {
-        return await this.categoryRepository.findOne(id);
+        const menuItemCategory = await this.categoryRepository.findOne(id);
+        if (!menuItemCategory) {
+            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return menuItemCategory;
     }
     async update(id, data) {
+        const menuItemCategory = await this.categoryRepository.findOne({ id });
+        if (!menuItemCategory) {
+            throw new common_1.HttpException('Not Found', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.categoryRepository.update(id, data);
         return await this.categoryRepository.findOne(id);
     }
     async destroy(id) {
+        const menuItemCategory = await this.categoryRepository.findOne({ id });
+        if (!menuItemCategory) {
+            throw new common_1.HttpException('Not Found', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.categoryRepository.delete(id);
         return { deleted: true };
     }

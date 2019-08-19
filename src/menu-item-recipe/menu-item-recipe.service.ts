@@ -63,7 +63,7 @@ export class MenuItemRecipeService {
   }
 
   async createMenuItemRecipe(data: MenuItemRecipeDTO) {
-    return this.updateMenuItemRecipe(data);
+    return await this.updateMenuItemRecipe(data);
   }
 
   async updateMenuItemRecipe(data: MenuItemRecipeDTO) {
@@ -77,7 +77,7 @@ export class MenuItemRecipeService {
       console.log(existingRecipe);
       if (existingRecipe) {
         //If recipe item already exists then update
-        this.menuItemRecipeRepository.update(
+        await this.menuItemRecipeRepository.update(
           {
             menuItem: data.menuItem,
             intermediateIngredient: ingredient.intermediateIngredient,
@@ -97,7 +97,7 @@ export class MenuItemRecipeService {
           ingredientType: ingredient.ingredientType,
           quantity: ingredient.quantity,
         });
-        this.menuItemRecipeRepository.save(menuItemRecipe);
+        await this.menuItemRecipeRepository.save(menuItemRecipe);
       }
     });
     this.updateMenuItemCost(data.menuItem); //Update Menu Item cost after calculating from the recipe

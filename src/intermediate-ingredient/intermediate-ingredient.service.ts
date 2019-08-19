@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
@@ -15,16 +15,26 @@ export class IntermediateIngredientService {
   ) {}
 
   async getAll() {
-    return await this.intermediateIngredientRepository.find({
-      relations: ['priceUnit'],
-    });
+    const intermediateIngredient = await this.intermediateIngredientRepository.find(
+      {
+        relations: ['priceUnit'],
+      },
+    );
+    if (!intermediateIngredient) {
+      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+    }
+    return intermediateIngredient;
   }
 
   async read(id: string) {
-    return await this.intermediateIngredientRepository.findOne(
+    const intermediateIngredient = await this.intermediateIngredientRepository.findOne(
       { id },
       { relations: ['priceUnit'] },
     );
+    if (!intermediateIngredient) {
+      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+    }
+    return intermediateIngredient;
   }
 
   async create(data: Partial<IntermediateIngredientDTO>) {
@@ -37,11 +47,23 @@ export class IntermediateIngredientService {
   }
 
   async update(id: string, data: Partial<IntermediateIngredientDTO>) {
+    const intermediateIngredient = await this.intermediateIngredientRepository.findOne(
+      { id },
+    );
+    if (!intermediateIngredient) {
+      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+    }
     await this.intermediateIngredientRepository.update({ id }, data);
     return this.read(id);
   }
 
   async delete(id: string) {
+    const intermediateIngredient = await this.intermediateIngredientRepository.findOne(
+      { id },
+    );
+    if (!intermediateIngredient) {
+      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+    }
     await this.intermediateIngredientRepository.delete({ id });
     return { deleted: true };
   }

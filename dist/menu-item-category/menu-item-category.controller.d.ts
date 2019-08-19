@@ -4,8 +4,8 @@ export declare class MenuItemCategoryController {
     private menuItemCategoryService;
     constructor(menuItemCategoryService: MenuItemCategoryService);
     getAllCategories(): Promise<import("./menu-item-category.entity").MenuItemCategory[]>;
-    addNewCategory(data: MenuItemCategoryDTO): Promise<Partial<MenuItemCategoryDTO>>;
-    getCategoryById(id: number): Promise<import("./menu-item-category.entity").MenuItemCategory>;
+    addNewCategory(data: Partial<MenuItemCategoryDTO>): Promise<Partial<MenuItemCategoryDTO>>;
+    getCategoryById(id: string): Promise<import("./menu-item-category.entity").MenuItemCategory>;
     updateCategory(id: string, data: Partial<MenuItemCategoryDTO>): Promise<import("./menu-item-category.entity").MenuItemCategory>;
     deleteCategory(id: string): Promise<{
         deleted: boolean;
