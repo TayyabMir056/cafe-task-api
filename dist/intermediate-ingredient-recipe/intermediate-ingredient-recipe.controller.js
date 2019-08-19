@@ -14,6 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const intermediate_ingredient_recipe_service_1 = require("./intermediate-ingredient-recipe.service");
+const intermediate_ingredient_recipe_dto_1 = require("./intermediate-ingredient-recipe.dto");
+const validation_pipe_1 = require("../shared/validation.pipe");
 let IntermediateIngredientRecipeController = class IntermediateIngredientRecipeController {
     constructor(intermediateIngredientRecipeService) {
         this.intermediateIngredientRecipeService = intermediateIngredientRecipeService;
@@ -51,17 +53,19 @@ __decorate([
 ], IntermediateIngredientRecipeController.prototype, "getRecipeByIntermediateIngredientId", null);
 __decorate([
     common_1.Post(),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [intermediate_ingredient_recipe_dto_1.IntermediateIngredientRecipeDTO]),
     __metadata("design:returntype", void 0)
 ], IntermediateIngredientRecipeController.prototype, "addRecipeForIntermediateIngredient", null);
 __decorate([
     common_1.Put(':intermediateIngredient_id'),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Param('intermediateIngredient_id')),
     __param(1, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, Object]),
+    __metadata("design:paramtypes", [String, intermediate_ingredient_recipe_dto_1.IntermediateIngredientRecipeDTO]),
     __metadata("design:returntype", void 0)
 ], IntermediateIngredientRecipeController.prototype, "updateRecipeForIntermediateIngredient", null);
 __decorate([

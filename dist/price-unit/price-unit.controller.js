@@ -14,6 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const price_unit_service_1 = require("./price-unit.service");
+const validation_pipe_1 = require("../shared/validation.pipe");
+var validate = require('uuid-validate');
 let PriceUnitController = class PriceUnitController {
     constructor(priceUnitService) {
         this.priceUnitService = priceUnitService;
@@ -22,15 +24,24 @@ let PriceUnitController = class PriceUnitController {
         return this.priceUnitService.showAll();
     }
     getUnitById(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Not Valid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.priceUnitService.read(id);
     }
     createPriceUnit(data) {
         return this.priceUnitService.create(data);
     }
     updatePriceUnit(id, data) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Not Valid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.priceUnitService.update(id, data);
     }
     deletePriceUnit(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Not Valid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.priceUnitService.destroy(id);
     }
 };
@@ -49,6 +60,7 @@ __decorate([
 ], PriceUnitController.prototype, "getUnitById", null);
 __decorate([
     common_1.Post(),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -70,7 +82,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], PriceUnitController.prototype, "deletePriceUnit", null);
 PriceUnitController = __decorate([
-    common_1.Controller('unit'),
+    common_1.Controller('units'),
     __metadata("design:paramtypes", [price_unit_service_1.PriceUnitService])
 ], PriceUnitController);
 exports.PriceUnitController = PriceUnitController;

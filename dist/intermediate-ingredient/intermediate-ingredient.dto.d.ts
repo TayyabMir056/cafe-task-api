@@ -1,4 +1,4 @@
-import { PriceUnit } from 'src/price-unit/price-unit.entity';
+import { PriceUnit } from '../price-unit/price-unit.entity';
 export declare class IntermediateIngredientDTO {
     id: string;
     name: string;

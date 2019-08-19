@@ -16,7 +16,7 @@ import {
 import { MenuItem } from '../menu-item/menu-item.entity';
 import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
 import { IntermediateIngredient } from '../intermediate-ingredient/intermediate-ingredient.entity';
-import { IngredientType } from 'src/IngredientType/IngredientType.enum';
+import { IngredientType } from '../IngredientType/IngredientType.enum';
 
 @Entity('MenuItemRecipe', { schema: 'public' })
 export class MenuItemRecipe {

@@ -14,6 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const menu_item_recipe_service_1 = require("./menu-item-recipe.service");
+const menu_item_recipe_dto_1 = require("./menu-item-recipe.dto");
+const validation_pipe_1 = require("../shared/validation.pipe");
 let MenuItemRecipeController = class MenuItemRecipeController {
     constructor(menuItemRecipeService) {
         this.menuItemRecipeService = menuItemRecipeService;
@@ -49,16 +51,18 @@ __decorate([
 ], MenuItemRecipeController.prototype, "getMenuItemRecipeById", null);
 __decorate([
     common_1.Post(),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [menu_item_recipe_dto_1.MenuItemRecipeDTO]),
     __metadata("design:returntype", void 0)
 ], MenuItemRecipeController.prototype, "addnewMenuItemRecipe", null);
 __decorate([
     common_1.Put(),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [menu_item_recipe_dto_1.MenuItemRecipeDTO]),
     __metadata("design:returntype", void 0)
 ], MenuItemRecipeController.prototype, "updateMenuItemRecipe", null);
 __decorate([

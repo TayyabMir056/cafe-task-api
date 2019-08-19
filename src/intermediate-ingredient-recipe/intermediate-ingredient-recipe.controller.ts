@@ -6,9 +6,11 @@ import {
   Delete,
   Param,
   Body,
+  UsePipes,
 } from '@nestjs/common';
 import { IntermediateIngredientRecipeService } from './intermediate-ingredient-recipe.service';
 import { IntermediateIngredientRecipeDTO } from './intermediate-ingredient-recipe.dto';
+import { ValidationPipe } from '../shared/validation.pipe';
 
 @Controller('intermediate-ingredient-recipe')
 export class IntermediateIngredientRecipeController {
@@ -33,6 +35,7 @@ export class IntermediateIngredientRecipeController {
   }
 
   @Post()
+  @UsePipes(new ValidationPipe())
   addRecipeForIntermediateIngredient(
     @Body() data: IntermediateIngredientRecipeDTO,
   ) {
@@ -42,6 +45,7 @@ export class IntermediateIngredientRecipeController {
   }
 
   @Put(':intermediateIngredient_id')
+  @UsePipes(new ValidationPipe())
   updateRecipeForIntermediateIngredient(
     @Param('intermediateIngredient_id') intermediateIngredient_id: string,
     @Body() data: IntermediateIngredientRecipeDTO,

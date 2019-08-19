@@ -1,14 +1,34 @@
-import { MenuItem } from 'src/menu-item/menu-item.entity';
-import { InventoryIngredient } from 'src/inventory-ingredient/inventory-ingredient.entity';
-import { IntermediateIngredient } from 'src/intermediate-ingredient/intermediate-ingredient.entity';
-import { IngredientType } from 'src/IngredientType/IngredientType.enum';
+import { MenuItem } from '../menu-item/menu-item.entity';
+import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
+import { IntermediateIngredient } from '../intermediate-ingredient/intermediate-ingredient.entity';
+import { IngredientType } from '../IngredientType/IngredientType.enum';
+import { ValidateNested, IsNumber } from 'class-validator';
+import { Type } from 'class-transformer';
 
-export interface MenuItemRecipeDTO {
+//To provide for validation
+class recipeDTO {
+  @ValidateNested({ each: true })
+  @Type(() => InventoryIngredient)
+  inventoryIngredient?: InventoryIngredient;
+
+  @ValidateNested({ each: true })
+  @Type(() => IntermediateIngredient)
+  intermediateIngredient?: IntermediateIngredient;
+
+  @IsNumber()
+  ingredientType: IngredientType;
+
+  @ValidateNested({ each: true })
+  @Type(() => MenuItem)
+  quantity: number;
+}
+
+export class MenuItemRecipeDTO {
+  @ValidateNested({ each: true })
+  @Type(() => MenuItem)
   menuItem: MenuItem;
-  recipe: {
-    inventoryIngredient?: InventoryIngredient;
-    intermediateIngredient?: IntermediateIngredient;
-    ingredientType: IngredientType;
-    quantity: number;
-  }[];
+
+  @ValidateNested({ each: true })
+  @Type(() => recipeDTO)
+  recipe: recipeDTO[];
 }

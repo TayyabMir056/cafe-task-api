@@ -51,7 +51,6 @@ __decorate([
 ], MenuItemCategoryController.prototype, "addNewCategory", null);
 __decorate([
     common_1.Get(':id'),
-    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
@@ -68,7 +67,6 @@ __decorate([
 ], MenuItemCategoryController.prototype, "updateCategory", null);
 __decorate([
     common_1.Delete(':id'),
-    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),

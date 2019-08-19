@@ -9,7 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const price_unit_entity_1 = require("../price-unit/price-unit.entity");
 const class_validator_1 = require("class-validator");
+const class_transformer_1 = require("class-transformer");
 class IntermediateIngredientDTO {
 }
 __decorate([
@@ -24,5 +26,10 @@ __decorate([
     class_validator_1.IsNumber(),
     __metadata("design:type", Number)
 ], IntermediateIngredientDTO.prototype, "cost", void 0);
+__decorate([
+    class_validator_1.ValidateNested({ each: true }),
+    class_transformer_1.Type(() => price_unit_entity_1.PriceUnit),
+    __metadata("design:type", price_unit_entity_1.PriceUnit)
+], IntermediateIngredientDTO.prototype, "priceUnit", void 0);
 exports.IntermediateIngredientDTO = IntermediateIngredientDTO;
 //# sourceMappingURL=intermediate-ingredient.dto.js.map

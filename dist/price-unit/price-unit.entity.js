@@ -21,6 +21,7 @@ __decorate([
 __decorate([
     typeorm_1.Column('character varying', {
         nullable: false,
+        unique: true,
         name: 'name',
     }),
     __metadata("design:type", String)
@@ -34,7 +35,8 @@ __decorate([
     __metadata("design:type", Array)
 ], PriceUnit.prototype, "inventoryIngredients", void 0);
 PriceUnit = __decorate([
-    typeorm_1.Entity('PriceUnit', { schema: 'public' })
+    typeorm_1.Entity('PriceUnit', { schema: 'public' }),
+    typeorm_1.Unique(['name'])
 ], PriceUnit);
 exports.PriceUnit = PriceUnit;
 //# sourceMappingURL=price-unit.entity.js.map

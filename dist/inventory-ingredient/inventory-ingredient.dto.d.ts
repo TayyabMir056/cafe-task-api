@@ -1,5 +1,5 @@
-import { PriceUnit } from 'src/price-unit/price-unit.entity';
-export interface InventoryIngredientDTO {
+import { PriceUnit } from '../price-unit/price-unit.entity';
+export declare class InventoryIngredientDTO {
     id: string;
     name: string;
     cost: number;

@@ -6,10 +6,12 @@ import {
   Delete,
   Param,
   Body,
+  UsePipes,
 } from '@nestjs/common';
 import { ADDRGETNETWORKPARAMS } from 'dns';
 import { IntermediateIngredientService } from './intermediate-ingredient.service';
 import { IntermediateIngredientDTO } from './intermediate-ingredient.dto';
+import { ValidationPipe } from '..//shared/validation.pipe';
 
 @Controller('intermediate-ingredient')
 export class IntermediateIngredientController {
@@ -27,6 +29,7 @@ export class IntermediateIngredientController {
   }
 
   @Post()
+  @UsePipes(new ValidationPipe())
   addNewIntermediateIngredient(
     @Body() data: Partial<IntermediateIngredientDTO>,
   ) {
@@ -34,6 +37,7 @@ export class IntermediateIngredientController {
   }
 
   @Put(':id')
+  @UsePipes(new ValidationPipe())
   updateIntermediateIngredient(
     @Param('id') id: string,
     @Body() data: Partial<IntermediateIngredientDTO>,

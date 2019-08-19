@@ -1,9 +1,11 @@
 import { IntermediateIngredient } from '../intermediate-ingredient/intermediate-ingredient.entity';
 import { InventoryIngredient } from '../inventory-ingredient/inventory-ingredient.entity';
-export interface IntermediateIngredientRecipeDTO {
-    intermediateIngredient: IntermediateIngredient;
-    inventoryIngredientQuantities: {
-        inventoryIngredient: InventoryIngredient;
-        quantity: number;
-    }[];
+declare class InventoryItemQuantityDTO {
+    inventoryIngredient: InventoryIngredient;
+    quantity: number;
 }
+export declare class IntermediateIngredientRecipeDTO {
+    intermediateIngredient: IntermediateIngredient;
+    inventoryIngredientQuantities: InventoryItemQuantityDTO[];
+}
+export {};

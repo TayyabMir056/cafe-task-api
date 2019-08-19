@@ -1,4 +1,4 @@
-export interface PriceUnitDTO {
+export declare class PriceUnitDTO {
     id: string;
     name: string;
 }

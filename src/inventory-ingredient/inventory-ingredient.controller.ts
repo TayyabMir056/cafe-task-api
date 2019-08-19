@@ -6,9 +6,11 @@ import {
   Delete,
   Param,
   Body,
+  UsePipes,
 } from '@nestjs/common';
 import { InventoryIngredientService } from './inventory-ingredient.service';
 import { InventoryIngredientDTO } from './inventory-ingredient.dto';
+import { ValidationPipe } from '../shared/validation.pipe';
 
 @Controller('inventory_ing')
 export class InventoryIngredientController {
@@ -25,11 +27,13 @@ export class InventoryIngredientController {
   }
 
   @Post()
+  @UsePipes(new ValidationPipe())
   addIngredient(@Body() data: Partial<InventoryIngredientDTO>) {
     return this.inventoryIngredientService.create(data);
   }
 
   @Put(':id')
+  @UsePipes(new ValidationPipe())
   updateIngredient(
     @Param('id') id: string,
     @Body() data: Partial<InventoryIngredientDTO>,

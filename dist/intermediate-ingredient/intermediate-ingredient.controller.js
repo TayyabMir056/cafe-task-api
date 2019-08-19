@@ -14,6 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const intermediate_ingredient_service_1 = require("./intermediate-ingredient.service");
+const validation_pipe_1 = require("..//shared/validation.pipe");
 let IntermediateIngredientController = class IntermediateIngredientController {
     constructor(intermediateIngredientService) {
         this.intermediateIngredientService = intermediateIngredientService;
@@ -49,6 +50,7 @@ __decorate([
 ], IntermediateIngredientController.prototype, "getIntermediateIngredientById", null);
 __decorate([
     common_1.Post(),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -56,6 +58,7 @@ __decorate([
 ], IntermediateIngredientController.prototype, "addNewIntermediateIngredient", null);
 __decorate([
     common_1.Put(':id'),
+    common_1.UsePipes(new validation_pipe_1.ValidationPipe()),
     __param(0, common_1.Param('id')),
     __param(1, common_1.Body()),
     __metadata("design:type", Function),

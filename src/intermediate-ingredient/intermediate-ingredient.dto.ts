@@ -1,6 +1,7 @@
-import { PriceUnit } from 'src/price-unit/price-unit.entity';
-import { IsString, IsNumber } from 'class-validator';
+import { PriceUnit } from '../price-unit/price-unit.entity';
+import { IsString, IsNumber, ValidateNested } from 'class-validator';
 import { isClass } from '@babel/types';
+import { Type } from 'class-transformer';
 
 export class IntermediateIngredientDTO {
   @IsString()
@@ -12,5 +13,7 @@ export class IntermediateIngredientDTO {
   @IsNumber()
   cost: number;
 
+  @ValidateNested({ each: true })
+  @Type(() => PriceUnit)
   priceUnit: PriceUnit;
 }

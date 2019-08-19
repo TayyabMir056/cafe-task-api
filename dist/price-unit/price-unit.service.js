@@ -16,6 +16,7 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const price_unit_entity_1 = require("./price-unit.entity");
+var validate = require('uuid-validate');
 let PriceUnitService = class PriceUnitService {
     constructor(priceUnitRepository) {
         this.priceUnitRepository = priceUnitRepository;
@@ -24,18 +25,36 @@ let PriceUnitService = class PriceUnitService {
         return await this.priceUnitRepository.find();
     }
     async create(data) {
+        const priceUnitExists = await this.priceUnitRepository.findOne({
+            where: { name: data.name },
+        });
+        if (priceUnitExists) {
+            throw new common_1.HttpException(`Price unit '${data.name}' already exists`, common_1.HttpStatus.CONFLICT);
+        }
         const priceUnit = await this.priceUnitRepository.create(data);
         await this.priceUnitRepository.save(priceUnit);
         return priceUnit;
     }
     async read(id) {
-        return await this.priceUnitRepository.findOne({ id });
+        const priceUnit = await this.priceUnitRepository.findOne({ id });
+        if (!priceUnit) {
+            throw new common_1.HttpException('Price unit not found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return priceUnit;
     }
     async update(id, data) {
+        const priceUnit = await this.priceUnitRepository.findOne(id);
+        if (!priceUnit) {
+            throw new common_1.HttpException('id not found', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.priceUnitRepository.update({ id }, data);
         return await this.priceUnitRepository.findOne({ id });
     }
     async destroy(id) {
+        const priceUnit = await this.priceUnitRepository.findOne(id);
+        if (!priceUnit) {
+            throw new common_1.HttpException('id not found', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.priceUnitRepository.delete({ id });
         return { deleted: 'successful' };
     }

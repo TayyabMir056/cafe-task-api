@@ -1,5 +1,5 @@
-import { MenuItemCategory } from 'src/menu-item-category/menu-item-category.entity';
-export interface MenuItemDTO {
+import { MenuItemCategory } from '../menu-item-category/menu-item-category.entity';
+export declare class MenuItemDTO {
     id: string;
     name: string;
     category: MenuItemCategory;

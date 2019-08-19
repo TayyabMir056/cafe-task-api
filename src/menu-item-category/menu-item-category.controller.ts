@@ -27,7 +27,6 @@ export class MenuItemCategoryController {
   }
 
   @Get(':id')
-  @UsePipes(new ValidationPipe())
   getCategoryById(@Param('id') id: string) {
     return this.menuItemCategoryService.read(id);
   }
@@ -42,7 +41,6 @@ export class MenuItemCategoryController {
   }
 
   @Delete(':id')
-  @UsePipes(new ValidationPipe())
   deleteCategory(@Param('id') id: string) {
     return this.menuItemCategoryService.destroy(id);
   }

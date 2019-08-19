@@ -1,8 +1,18 @@
-import { PriceUnit } from 'src/price-unit/price-unit.entity';
+import { PriceUnit } from '../price-unit/price-unit.entity';
+import { IsUUID, IsString, IsNumber, ValidateNested } from 'class-validator';
+import { Type } from 'class-transformer';
 
-export interface InventoryIngredientDTO {
+export class InventoryIngredientDTO {
+  @IsUUID()
   id: string;
+
+  @IsString()
   name: string;
+
+  @IsNumber()
   cost: number;
+
+  @ValidateNested({ each: true })
+  @Type(() => PriceUnit)
   priceUnit: PriceUnit;
 }
