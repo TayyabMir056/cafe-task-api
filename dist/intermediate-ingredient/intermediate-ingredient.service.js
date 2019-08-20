@@ -37,7 +37,11 @@ let IntermediateIngredientService = class IntermediateIngredientService {
         return intermediateIngredient;
     }
     async create(data) {
-        const intermediateIngredient = this.intermediateIngredientRepository.create(data);
+        const intermediateIngredientExists = this.intermediateIngredientRepository.findOne({ name: data.name });
+        if (intermediateIngredientExists) {
+            throw new common_1.HttpException(`Intermediate ingredient ${data.name} already exists`, common_1.HttpStatus.CONFLICT);
+        }
+        const intermediateIngredient = await this.intermediateIngredientRepository.create(data);
         intermediateIngredient['cost'] = -1;
         await this.intermediateIngredientRepository.save(intermediateIngredient);
         return intermediateIngredient;

@@ -1,10 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 
 import { MenuItemRecipe } from './menu-item-recipe.entity';
 import { MenuItemRecipeDTO } from './menu-item-recipe.dto';
 import { MenuItem } from '../menu-item/menu-item.entity';
+import { IngredientType } from 'src/IngredientType/IngredientType.enum';
+import { InventoryIngredient } from 'src/inventory-ingredient/inventory-ingredient.entity';
 
 @Injectable()
 export class MenuItemRecipeService {
@@ -16,11 +18,21 @@ export class MenuItemRecipeService {
   ) {}
 
   async getAll() {
-    return await this.menuItemRecipeRepository.find({
+    const menuItemRecipe = await this.menuItemRecipeRepository.find({
       relations: ['menuItem', 'intermediateIngredient', 'inventoryIngredient'],
     });
+    if (!menuItemRecipe) {
+      throw new HttpException('No recipes found', HttpStatus.NOT_FOUND);
+    }
+    return menuItemRecipe;
   }
   async readById(menuItem: Partial<MenuItem>) {
+    //Check if menuItem exists in the database
+    const menuItemExists = this.menuItemRepository.findOne({ id: menuItem.id });
+    if (!menuItemExists) {
+      throw new HttpException('Menu Item not found!', HttpStatus.NOT_FOUND);
+    }
+
     let menuItemRecipe = await this.menuItemRecipeRepository.find({
       join: {
         alias: 'menuItemRecipe',
@@ -33,24 +45,30 @@ export class MenuItemRecipeService {
       where: { menuItem: menuItem },
     });
 
+    //If recipe is not found, throw exception
+    if (!menuItemRecipe.length) {
+      throw new HttpException('Recipe not found!', HttpStatus.NOT_FOUND);
+    }
+
+    //If Recipe is found, loop through the items and add in recipe[] a
     let recipe = [];
-    menuItemRecipe.forEach(recipeItem => {
-      recipe.push({
+    await menuItemRecipe.forEach(async recipeItem => {
+      await recipe.push({
         ingredient:
-          recipeItem.ingredientType == 2
+          recipeItem.ingredientType == IngredientType.Intermediate
             ? recipeItem.intermediateIngredient.id
             : recipeItem.inventoryIngredient.id,
         ingredientName:
-          recipeItem.ingredientType == 1
+          recipeItem.ingredientType == IngredientType.Inventory
             ? recipeItem.inventoryIngredient.name
             : recipeItem.intermediateIngredient.name,
         ingredientType:
-          recipeItem.ingredientType == 1
+          recipeItem.ingredientType == IngredientType.Inventory
             ? 'Inventory Ingredient'
             : 'Intermediate Ingredient',
         quantity: recipeItem.quantity,
         ingredientCost:
-          recipeItem.ingredientType == 1
+          recipeItem.ingredientType == IngredientType.Inventory
             ? recipeItem.inventoryIngredient.cost
             : recipeItem.intermediateIngredient.cost,
       });
@@ -63,6 +81,7 @@ export class MenuItemRecipeService {
   }
 
   async createMenuItemRecipe(data: MenuItemRecipeDTO) {
+    //UpdateMenuItemRecipe creates new item if not exists.. so why not use the same function?
     return await this.updateMenuItemRecipe(data);
   }
 
@@ -105,20 +124,23 @@ export class MenuItemRecipeService {
   }
 
   async delete(id: string) {
+    //Check if id exists in the database
+    const recipeItemExists = await this.menuItemRecipeRepository.findOne({
+      id,
+    });
+    if (!recipeItemExists) {
+      throw new HttpException('item not found', HttpStatus.NOT_FOUND);
+    }
     await this.menuItemRecipeRepository.delete({ id });
     return { deleted: true };
   }
 
   async updateMenuItemCost(menuItem: Partial<MenuItem>) {
     let recipe = await this.readById(menuItem);
-    console.log('Updating cost...');
-    console.log(recipe);
     let cost = 0;
-
     await recipe.recipe.forEach(recipeItem => {
       cost = cost + recipeItem['ingredientCost'] * recipeItem['quantity'];
     });
-
     await this.menuItemRepository.update(menuItem, { cost });
   }
 }

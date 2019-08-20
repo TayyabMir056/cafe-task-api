@@ -12,6 +12,7 @@ const intermediate_ingredient_recipe_entity_1 = require("./intermediate-ingredie
 const intermediate_ingredient_entity_1 = require("../intermediate-ingredient/intermediate-ingredient.entity");
 const intermediate_ingredient_recipe_controller_1 = require("./intermediate-ingredient-recipe.controller");
 const intermediate_ingredient_recipe_service_1 = require("./intermediate-ingredient-recipe.service");
+const inventory_ingredient_entity_1 = require("../inventory-ingredient/inventory-ingredient.entity");
 let IntermediateIngredientRecipeModule = class IntermediateIngredientRecipeModule {
 };
 IntermediateIngredientRecipeModule = __decorate([
@@ -20,6 +21,7 @@ IntermediateIngredientRecipeModule = __decorate([
             typeorm_1.TypeOrmModule.forFeature([
                 intermediate_ingredient_recipe_entity_1.IntermediateIngredientRecipe,
                 intermediate_ingredient_entity_1.IntermediateIngredient,
+                inventory_ingredient_entity_1.InventoryIngredient,
             ]),
         ],
         controllers: [intermediate_ingredient_recipe_controller_1.IntermediateIngredientRecipeController],

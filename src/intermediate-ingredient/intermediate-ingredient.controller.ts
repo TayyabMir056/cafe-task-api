@@ -7,11 +7,14 @@ import {
   Param,
   Body,
   UsePipes,
+  HttpException,
+  HttpStatus,
 } from '@nestjs/common';
 import { ADDRGETNETWORKPARAMS } from 'dns';
 import { IntermediateIngredientService } from './intermediate-ingredient.service';
 import { IntermediateIngredientDTO } from './intermediate-ingredient.dto';
 import { ValidationPipe } from '..//shared/validation.pipe';
+var validate = require('uuid-validate');
 
 @Controller('intermediate-ingredient')
 export class IntermediateIngredientController {
@@ -25,6 +28,9 @@ export class IntermediateIngredientController {
 
   @Get(':id')
   getIntermediateIngredientById(@Param('id') id: string) {
+    if (!validate(id)) {
+      throw new HttpException('Invalid id ', HttpStatus.BAD_REQUEST);
+    }
     return this.intermediateIngredientService.read(id);
   }
 
@@ -42,11 +48,17 @@ export class IntermediateIngredientController {
     @Param('id') id: string,
     @Body() data: Partial<IntermediateIngredientDTO>,
   ) {
+    if (!validate(id)) {
+      throw new HttpException('Invalid id ', HttpStatus.BAD_REQUEST);
+    }
     return this.intermediateIngredientService.update(id, data);
   }
 
   @Delete(':id')
   deleteIntermediateIngredient(@Param('id') id: string) {
+    if (!validate(id)) {
+      throw new HttpException('Invalid id ', HttpStatus.BAD_REQUEST);
+    }
     return this.intermediateIngredientService.delete(id);
   }
 }

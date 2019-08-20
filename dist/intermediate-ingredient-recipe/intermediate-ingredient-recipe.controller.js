@@ -16,6 +16,7 @@ const common_1 = require("@nestjs/common");
 const intermediate_ingredient_recipe_service_1 = require("./intermediate-ingredient-recipe.service");
 const intermediate_ingredient_recipe_dto_1 = require("./intermediate-ingredient-recipe.dto");
 const validation_pipe_1 = require("../shared/validation.pipe");
+var validate = require('uuid-validate');
 let IntermediateIngredientRecipeController = class IntermediateIngredientRecipeController {
     constructor(intermediateIngredientRecipeService) {
         this.intermediateIngredientRecipeService = intermediateIngredientRecipeService;
@@ -24,6 +25,9 @@ let IntermediateIngredientRecipeController = class IntermediateIngredientRecipeC
         return this.intermediateIngredientRecipeService.getAll();
     }
     getRecipeByIntermediateIngredientId(intermediateIngredient_id) {
+        if (!validate(intermediateIngredient_id)) {
+            throw new common_1.HttpException('Invalid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.intermediateIngredientRecipeService.getRecipeByIntermediateIngredient({
             id: intermediateIngredient_id,
         });
@@ -32,9 +36,15 @@ let IntermediateIngredientRecipeController = class IntermediateIngredientRecipeC
         return this.intermediateIngredientRecipeService.createRecipeForIntermediateIngredient(data);
     }
     updateRecipeForIntermediateIngredient(intermediateIngredient_id, data) {
+        if (!validate(intermediateIngredient_id)) {
+            throw new common_1.HttpException('Invalid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         this.intermediateIngredientRecipeService.updateIntermediateIngredientRecipe(intermediateIngredient_id, data);
     }
     deleteRecipeForIntermediateIngredient(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Invalid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         this.intermediateIngredientRecipeService.deleteIntermediateIngredientRecipe(id);
     }
 };

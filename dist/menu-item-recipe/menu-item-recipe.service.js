@@ -23,11 +23,19 @@ let MenuItemRecipeService = class MenuItemRecipeService {
         this.menuItemRepository = menuItemRepository;
     }
     async getAll() {
-        return await this.menuItemRecipeRepository.find({
+        const menuItemRecipe = await this.menuItemRecipeRepository.find({
             relations: ['menuItem', 'intermediateIngredient', 'inventoryIngredient'],
         });
+        if (!menuItemRecipe) {
+            throw new common_1.HttpException('No recipes found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return menuItemRecipe;
     }
     async readById(menuItem) {
+        const menuItemExists = this.menuItemRepository.findOne({ id: menuItem.id });
+        if (!menuItemExists) {
+            throw new common_1.HttpException('Menu Item not found!', common_1.HttpStatus.NOT_FOUND);
+        }
         let menuItemRecipe = await this.menuItemRecipeRepository.find({
             join: {
                 alias: 'menuItemRecipe',
@@ -39,9 +47,12 @@ let MenuItemRecipeService = class MenuItemRecipeService {
             },
             where: { menuItem: menuItem },
         });
+        if (!menuItemRecipe.length) {
+            throw new common_1.HttpException('Recipe not found!', common_1.HttpStatus.NOT_FOUND);
+        }
         let recipe = [];
-        menuItemRecipe.forEach(recipeItem => {
-            recipe.push({
+        await menuItemRecipe.forEach(async (recipeItem) => {
+            await recipe.push({
                 ingredient: recipeItem.ingredientType == 2
                     ? recipeItem.intermediateIngredient.id
                     : recipeItem.inventoryIngredient.id,
@@ -99,13 +110,17 @@ let MenuItemRecipeService = class MenuItemRecipeService {
         return this.readById(data.menuItem);
     }
     async delete(id) {
+        const recipeItemExists = await this.menuItemRecipeRepository.findOne({
+            id,
+        });
+        if (!recipeItemExists) {
+            throw new common_1.HttpException('item not found', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.menuItemRecipeRepository.delete({ id });
         return { deleted: true };
     }
     async updateMenuItemCost(menuItem) {
         let recipe = await this.readById(menuItem);
-        console.log('Updating cost...');
-        console.log(recipe);
         let cost = 0;
         await recipe.recipe.forEach(recipeItem => {
             cost = cost + recipeItem['ingredientCost'] * recipeItem['quantity'];

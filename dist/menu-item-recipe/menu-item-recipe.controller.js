@@ -16,6 +16,7 @@ const common_1 = require("@nestjs/common");
 const menu_item_recipe_service_1 = require("./menu-item-recipe.service");
 const menu_item_recipe_dto_1 = require("./menu-item-recipe.dto");
 const validation_pipe_1 = require("../shared/validation.pipe");
+var validate = require('uuid-validate');
 let MenuItemRecipeController = class MenuItemRecipeController {
     constructor(menuItemRecipeService) {
         this.menuItemRecipeService = menuItemRecipeService;
@@ -24,6 +25,9 @@ let MenuItemRecipeController = class MenuItemRecipeController {
         return this.menuItemRecipeService.getAll();
     }
     getMenuItemRecipeById(menuItem_id) {
+        if (!validate(menuItem_id)) {
+            throw new common_1.HttpException('invalid id format!', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.menuItemRecipeService.readById({ id: menuItem_id });
     }
     addnewMenuItemRecipe(data) {
@@ -33,6 +37,9 @@ let MenuItemRecipeController = class MenuItemRecipeController {
         return this.menuItemRecipeService.updateMenuItemRecipe(data);
     }
     deleteMenuItemRecipe(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('invalid id format!', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.menuItemRecipeService.delete(id);
     }
 };

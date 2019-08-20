@@ -7,10 +7,14 @@ import {
   Param,
   Body,
   UsePipes,
+  HttpException,
+  HttpService,
+  HttpStatus,
 } from '@nestjs/common';
 import { IntermediateIngredientRecipeService } from './intermediate-ingredient-recipe.service';
 import { IntermediateIngredientRecipeDTO } from './intermediate-ingredient-recipe.dto';
 import { ValidationPipe } from '../shared/validation.pipe';
+var validate = require('uuid-validate');
 
 @Controller('intermediate-ingredient-recipe')
 export class IntermediateIngredientRecipeController {
@@ -27,6 +31,10 @@ export class IntermediateIngredientRecipeController {
   getRecipeByIntermediateIngredientId(
     @Param('intermediateIngredient_id') intermediateIngredient_id: string,
   ) {
+    //Check id is valid uuid
+    if (!validate(intermediateIngredient_id)) {
+      throw new HttpException('Invalid id', HttpStatus.BAD_REQUEST);
+    }
     return this.intermediateIngredientRecipeService.getRecipeByIntermediateIngredient(
       {
         id: intermediateIngredient_id,
@@ -50,6 +58,10 @@ export class IntermediateIngredientRecipeController {
     @Param('intermediateIngredient_id') intermediateIngredient_id: string,
     @Body() data: IntermediateIngredientRecipeDTO,
   ) {
+    //Check id is valid uuid
+    if (!validate(intermediateIngredient_id)) {
+      throw new HttpException('Invalid id', HttpStatus.BAD_REQUEST);
+    }
     this.intermediateIngredientRecipeService.updateIntermediateIngredientRecipe(
       intermediateIngredient_id,
       data,
@@ -58,6 +70,10 @@ export class IntermediateIngredientRecipeController {
 
   @Delete(':id')
   deleteRecipeForIntermediateIngredient(@Param('id') id: string) {
+    //Check id is valid uuid
+    if (!validate(id)) {
+      throw new HttpException('Invalid id', HttpStatus.BAD_REQUEST);
+    }
     this.intermediateIngredientRecipeService.deleteIntermediateIngredientRecipe(
       id,
     );

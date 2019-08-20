@@ -38,7 +38,18 @@ export class IntermediateIngredientService {
   }
 
   async create(data: Partial<IntermediateIngredientDTO>) {
-    const intermediateIngredient = this.intermediateIngredientRepository.create(
+    //Check if it already doesnot exist
+
+    const intermediateIngredientExists = this.intermediateIngredientRepository.findOne(
+      { name: data.name },
+    );
+    if (intermediateIngredientExists) {
+      throw new HttpException(
+        `Intermediate ingredient ${data.name} already exists`,
+        HttpStatus.CONFLICT,
+      );
+    }
+    const intermediateIngredient = await this.intermediateIngredientRepository.create(
       data,
     );
     intermediateIngredient['cost'] = -1; // Default value when recipe is not set

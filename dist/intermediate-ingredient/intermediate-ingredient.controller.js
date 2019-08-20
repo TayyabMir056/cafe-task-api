@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const intermediate_ingredient_service_1 = require("./intermediate-ingredient.service");
 const validation_pipe_1 = require("..//shared/validation.pipe");
+var validate = require('uuid-validate');
 let IntermediateIngredientController = class IntermediateIngredientController {
     constructor(intermediateIngredientService) {
         this.intermediateIngredientService = intermediateIngredientService;
@@ -23,15 +24,24 @@ let IntermediateIngredientController = class IntermediateIngredientController {
         return this.intermediateIngredientService.getAll();
     }
     getIntermediateIngredientById(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Invalid id ', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.intermediateIngredientService.read(id);
     }
     addNewIntermediateIngredient(data) {
         return this.intermediateIngredientService.create(data);
     }
     updateIntermediateIngredient(id, data) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Invalid id ', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.intermediateIngredientService.update(id, data);
     }
     deleteIntermediateIngredient(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Invalid id ', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.intermediateIngredientService.delete(id);
     }
 };
