@@ -21,21 +21,47 @@ let InventoryIngredientService = class InventoryIngredientService {
         this.inventoryRepository = inventoryRepository;
     }
     async showAll() {
-        return await this.inventoryRepository.find();
+        const inventoryIngredient = await this.inventoryRepository.find();
+        if (!inventoryIngredient) {
+            throw new common_1.HttpException('No inventory ingredients found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return inventoryIngredient;
     }
     async create(data) {
-        const inventoryIngredient = this.inventoryRepository.create(data);
+        const inventoryIngredientExists = await this.inventoryRepository.findOne({
+            name: data.name,
+        });
+        if (inventoryIngredientExists) {
+            throw new common_1.HttpException(`Inventory Ingredient ${data.name} already exists`, common_1.HttpStatus.CONFLICT);
+        }
+        const inventoryIngredient = await this.inventoryRepository.create(data);
         await this.inventoryRepository.save(inventoryIngredient);
         return inventoryIngredient;
     }
     async read(id) {
-        return await this.inventoryRepository.findOne({ id });
+        const inventoryIngredient = await this.inventoryRepository.findOne({ id });
+        if (!inventoryIngredient) {
+            throw new common_1.HttpException('inventory ingredient does not exist', common_1.HttpStatus.NOT_FOUND);
+        }
+        return inventoryIngredient;
     }
     async update(id, data) {
+        const inventoryIngredientExists = await this.inventoryRepository.findOne({
+            id,
+        });
+        if (!inventoryIngredientExists) {
+            throw new common_1.HttpException('inventory ingredient does not exist', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.inventoryRepository.update({ id }, data);
         return await this.inventoryRepository.findOne({ id });
     }
     async destroy(id) {
+        const inventoryIngredientExists = await this.inventoryRepository.findOne({
+            id,
+        });
+        if (!inventoryIngredientExists) {
+            throw new common_1.HttpException('inventory ingredient does not exist', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.inventoryRepository.delete({ id });
         return { deleted: true };
     }

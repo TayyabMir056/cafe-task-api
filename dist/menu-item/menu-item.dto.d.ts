@@ -4,5 +4,5 @@ export declare class MenuItemDTO {
     name: string;
     category: MenuItemCategory;
     sellingPrice: number;
-    cost: number;
+    cost?: number;
 }

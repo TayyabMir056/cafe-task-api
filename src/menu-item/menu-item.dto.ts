@@ -17,5 +17,5 @@ export class MenuItemDTO {
   sellingPrice: number;
 
   @IsNumber()
-  cost: number;
+  cost?: number;
 }

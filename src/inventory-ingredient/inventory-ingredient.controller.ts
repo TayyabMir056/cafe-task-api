@@ -7,12 +7,15 @@ import {
   Param,
   Body,
   UsePipes,
+  HttpException,
+  HttpStatus,
 } from '@nestjs/common';
 import { InventoryIngredientService } from './inventory-ingredient.service';
 import { InventoryIngredientDTO } from './inventory-ingredient.dto';
 import { ValidationPipe } from '../shared/validation.pipe';
+var validate = require('uuid-validate');
 
-@Controller('inventory_ing')
+@Controller('inventory-ingredient')
 export class InventoryIngredientController {
   constructor(private inventoryIngredientService: InventoryIngredientService) {}
 
@@ -23,6 +26,9 @@ export class InventoryIngredientController {
 
   @Get(':id')
   gerIngredientById(@Param('id') id: string) {
+    if (!validate(id)) {
+      throw new HttpException('invalid id', HttpStatus.BAD_REQUEST);
+    }
     return this.inventoryIngredientService.read(id);
   }
 
@@ -38,11 +44,17 @@ export class InventoryIngredientController {
     @Param('id') id: string,
     @Body() data: Partial<InventoryIngredientDTO>,
   ) {
+    if (!validate(id)) {
+      throw new HttpException('invalid id', HttpStatus.BAD_REQUEST);
+    }
     return this.inventoryIngredientService.update(id, data);
   }
 
   @Delete(':id')
   deleteIngredient(@Param('id') id: string) {
+    if (!validate(id)) {
+      throw new HttpException('invalid id', HttpStatus.BAD_REQUEST);
+    }
     return this.inventoryIngredientService.destroy(id);
   }
 }

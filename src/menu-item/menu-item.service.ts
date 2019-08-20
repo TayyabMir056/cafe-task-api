@@ -42,7 +42,7 @@ export class MenuItemService {
       throw new HttpException('Menu Item Already exists', HttpStatus.CONFLICT);
     }
     //If not
-    const menuItem = await this.menuItemRepository.create(data);
+    const menuItem = this.menuItemRepository.create(data);
     await this.menuItemRepository.save(menuItem);
     return menuItem;
   }

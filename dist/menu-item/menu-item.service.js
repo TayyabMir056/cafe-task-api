@@ -43,7 +43,7 @@ let MenuItemService = class MenuItemService {
         if (menuItemExists) {
             throw new common_1.HttpException('Menu Item Already exists', common_1.HttpStatus.CONFLICT);
         }
-        const menuItem = await this.menuItemRepository.create(data);
+        const menuItem = this.menuItemRepository.create(data);
         await this.menuItemRepository.save(menuItem);
         return menuItem;
     }

@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const inventory_ingredient_service_1 = require("./inventory-ingredient.service");
 const validation_pipe_1 = require("../shared/validation.pipe");
+var validate = require('uuid-validate');
 let InventoryIngredientController = class InventoryIngredientController {
     constructor(inventoryIngredientService) {
         this.inventoryIngredientService = inventoryIngredientService;
@@ -23,15 +24,24 @@ let InventoryIngredientController = class InventoryIngredientController {
         return this.inventoryIngredientService.showAll();
     }
     gerIngredientById(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('invalid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.inventoryIngredientService.read(id);
     }
     addIngredient(data) {
         return this.inventoryIngredientService.create(data);
     }
     updateIngredient(id, data) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('invalid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.inventoryIngredientService.update(id, data);
     }
     deleteIngredient(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('invalid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.inventoryIngredientService.destroy(id);
     }
 };
@@ -73,7 +83,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], InventoryIngredientController.prototype, "deleteIngredient", null);
 InventoryIngredientController = __decorate([
-    common_1.Controller('inventory_ing'),
+    common_1.Controller('inventory-ingredient'),
     __metadata("design:paramtypes", [inventory_ingredient_service_1.InventoryIngredientService])
 ], InventoryIngredientController);
 exports.InventoryIngredientController = InventoryIngredientController;
