@@ -21,21 +21,45 @@ let MenuItemService = class MenuItemService {
         this.menuItemRepository = menuItemRepository;
     }
     async showAll() {
-        return await this.menuItemRepository.find({ relations: ['category'] });
+        const menuItem = await this.menuItemRepository.find({
+            relations: ['category'],
+        });
+        if (!menuItem) {
+            throw new common_1.HttpException('No menu item found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return menuItem;
     }
     async read(id) {
-        return await this.menuItemRepository.findOne({ id }, { relations: ['category'] });
+        const menuItem = await this.menuItemRepository.findOne({ id }, { relations: ['category'] });
+        if (!menuItem) {
+            throw new common_1.HttpException('menu item not found', common_1.HttpStatus.NOT_FOUND);
+        }
+        return menuItem;
     }
     async create(data) {
-        const menuItem = this.menuItemRepository.create(data);
+        const menuItemExists = await this.menuItemRepository.findOne({
+            name: data.name,
+        });
+        if (menuItemExists) {
+            throw new common_1.HttpException('Menu Item Already exists', common_1.HttpStatus.CONFLICT);
+        }
+        const menuItem = await this.menuItemRepository.create(data);
         await this.menuItemRepository.save(menuItem);
         return menuItem;
     }
     async update(id, data) {
+        const menuItemExists = await this.menuItemRepository.findOne({ id });
+        if (!menuItemExists) {
+            throw new common_1.HttpException('Menu item does not exist', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.menuItemRepository.update({ id }, data);
         return this.menuItemRepository.findOne({ id });
     }
     async delete(id) {
+        const menuItemExists = await this.menuItemRepository.findOne({ id });
+        if (!menuItemExists) {
+            throw new common_1.HttpException('Menu item does not exist', common_1.HttpStatus.NOT_FOUND);
+        }
         await this.menuItemRepository.delete({ id });
         return { delete: true };
     }

@@ -4,7 +4,7 @@ import { Type } from 'class-transformer';
 
 export class MenuItemDTO {
   @IsUUID()
-  id: string;
+  id?: string;
 
   @IsString()
   name: string;

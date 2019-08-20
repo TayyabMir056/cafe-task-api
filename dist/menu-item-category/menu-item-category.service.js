@@ -28,6 +28,12 @@ let MenuItemCategoryService = class MenuItemCategoryService {
         return menuItemCategory;
     }
     async create(data) {
+        const categoryExists = await this.categoryRepository.findOne({
+            name: data.name,
+        });
+        if (categoryExists) {
+            throw new common_1.HttpException('category already exists', common_1.HttpStatus.CONFLICT);
+        }
         const menuItemCategory = await this.categoryRepository.create(data);
         await this.categoryRepository.save(menuItemCategory);
         return data;

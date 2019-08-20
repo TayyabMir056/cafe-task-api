@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const validation_pipe_1 = require("../shared/validation.pipe");
 const menu_item_category_service_1 = require("./menu-item-category.service");
+var validate = require('uuid-validate');
 let MenuItemCategoryController = class MenuItemCategoryController {
     constructor(menuItemCategoryService) {
         this.menuItemCategoryService = menuItemCategoryService;
@@ -26,12 +27,21 @@ let MenuItemCategoryController = class MenuItemCategoryController {
         return this.menuItemCategoryService.create(data);
     }
     getCategoryById(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Not Valid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.menuItemCategoryService.read(id);
     }
     updateCategory(id, data) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Not Valid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.menuItemCategoryService.update(id, data);
     }
     deleteCategory(id) {
+        if (!validate(id)) {
+            throw new common_1.HttpException('Not Valid id', common_1.HttpStatus.BAD_REQUEST);
+        }
         return this.menuItemCategoryService.destroy(id);
     }
 };
