@@ -11,11 +11,11 @@ export declare class MenuItemRecipeService {
         menuItem: Partial<MenuItem>;
         recipe: any[];
     }>;
-    createMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+    createMenuItemRecipe(data: Partial<MenuItemRecipeDTO>): Promise<{
         menuItem: Partial<MenuItem>;
         recipe: any[];
     }>;
-    updateMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+    updateMenuItemRecipe(data: Partial<MenuItemRecipeDTO>): Promise<{
         menuItem: Partial<MenuItem>;
         recipe: any[];
     }>;

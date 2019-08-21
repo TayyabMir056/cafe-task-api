@@ -6,6 +6,6 @@ declare class InventoryItemQuantityDTO {
 }
 export declare class IntermediateIngredientRecipeDTO {
     intermediateIngredient: IntermediateIngredient;
-    inventoryIngredientQuantities: InventoryItemQuantityDTO[];
+    recipe: InventoryItemQuantityDTO[];
 }
 export {};

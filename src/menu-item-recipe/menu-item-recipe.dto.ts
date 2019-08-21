@@ -15,11 +15,9 @@ class recipeDTO {
   @Type(() => IntermediateIngredient)
   intermediateIngredient?: IntermediateIngredient;
 
-  @IsNumber()
   ingredientType: IngredientType;
 
-  @ValidateNested({ each: true })
-  @Type(() => MenuItem)
+  @IsNumber()
   quantity: number;
 }
 

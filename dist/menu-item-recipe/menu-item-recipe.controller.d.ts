@@ -8,11 +8,11 @@ export declare class MenuItemRecipeController {
         menuItem: Partial<import("../menu-item/menu-item.entity").MenuItem>;
         recipe: any[];
     }>;
-    addnewMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+    addnewMenuItemRecipe(data: Partial<MenuItemRecipeDTO>): Promise<{
         menuItem: Partial<import("../menu-item/menu-item.entity").MenuItem>;
         recipe: any[];
     }>;
-    updateMenuItemRecipe(data: MenuItemRecipeDTO): Promise<{
+    updateMenuItemRecipe(data: Partial<MenuItemRecipeDTO>): Promise<{
         menuItem: Partial<import("../menu-item/menu-item.entity").MenuItem>;
         recipe: any[];
     }>;

@@ -21,7 +21,7 @@ export class MenuItemRecipeService {
     const menuItemRecipe = await this.menuItemRecipeRepository.find({
       relations: ['menuItem', 'intermediateIngredient', 'inventoryIngredient'],
     });
-    if (!menuItemRecipe) {
+    if (!menuItemRecipe.length) {
       throw new HttpException('No recipes found', HttpStatus.NOT_FOUND);
     }
     return menuItemRecipe;
@@ -46,14 +46,15 @@ export class MenuItemRecipeService {
     });
 
     //If recipe is not found, throw exception
-    if (!menuItemRecipe.length) {
-      throw new HttpException('Recipe not found!', HttpStatus.NOT_FOUND);
-    }
+    // if (!menuItemRecipe.length) {
+    //   throw new HttpException('Recipe not found!', HttpStatus.NOT_FOUND);
+    // }
 
     //If Recipe is found, loop through the items and add in recipe[] a
     let recipe = [];
     await menuItemRecipe.forEach(async recipeItem => {
       await recipe.push({
+        id: recipeItem.id,
         ingredient:
           recipeItem.ingredientType == IngredientType.Intermediate
             ? recipeItem.intermediateIngredient.id
@@ -80,12 +81,12 @@ export class MenuItemRecipeService {
     };
   }
 
-  async createMenuItemRecipe(data: MenuItemRecipeDTO) {
+  async createMenuItemRecipe(data: Partial<MenuItemRecipeDTO>) {
     //UpdateMenuItemRecipe creates new item if not exists.. so why not use the same function?
     return await this.updateMenuItemRecipe(data);
   }
 
-  async updateMenuItemRecipe(data: MenuItemRecipeDTO) {
+  async updateMenuItemRecipe(data: Partial<MenuItemRecipeDTO>) {
     await data.recipe.forEach(async ingredient => {
       let existingRecipe = await this.menuItemRecipeRepository.findOne({
         menuItem: data.menuItem,
@@ -109,7 +110,7 @@ export class MenuItemRecipeService {
         );
       } // If recipe item doesnot exist, create new
       else {
-        let menuItemRecipe = this.menuItemRecipeRepository.create({
+        let menuItemRecipe = await this.menuItemRecipeRepository.create({
           menuItem: data.menuItem,
           intermediateIngredient: ingredient.intermediateIngredient,
           inventoryIngredient: ingredient.inventoryIngredient,
@@ -119,8 +120,8 @@ export class MenuItemRecipeService {
         await this.menuItemRecipeRepository.save(menuItemRecipe);
       }
     });
-    this.updateMenuItemCost(data.menuItem); //Update Menu Item cost after calculating from the recipe
-    return this.readById(data.menuItem);
+    await this.updateMenuItemCost(data.menuItem); //Update Menu Item cost after calculating from the recipe
+    return await this.readById(data.menuItem);
   }
 
   async delete(id: string) {

@@ -23,5 +23,7 @@ export declare class IntermediateIngredientRecipeService {
     deleteIntermediateIngredientRecipe(id: string): Promise<{
         deleted: boolean;
     }>;
-    updateIntermediateIngredientCost(intermediateIngredient: IntermediateIngredient): Promise<void>;
+    updateIntermediateIngredientCost(intermediateIngredient: IntermediateIngredient): Promise<{
+        updated: string;
+    }>;
 }

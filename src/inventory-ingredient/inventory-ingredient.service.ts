@@ -12,7 +12,9 @@ export class InventoryIngredientService {
   ) {}
 
   async showAll() {
-    const inventoryIngredient = await this.inventoryRepository.find();
+    const inventoryIngredient = await this.inventoryRepository.find({
+      relations: ['priceUnit'],
+    });
     if (!inventoryIngredient) {
       throw new HttpException(
         'No inventory ingredients found',

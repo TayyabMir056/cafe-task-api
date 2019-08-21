@@ -29,11 +29,6 @@ __decorate([
 __decorate([
     class_validator_1.IsNumber(),
     __metadata("design:type", Number)
-], recipeDTO.prototype, "ingredientType", void 0);
-__decorate([
-    class_validator_1.ValidateNested({ each: true }),
-    class_transformer_1.Type(() => menu_item_entity_1.MenuItem),
-    __metadata("design:type", Number)
 ], recipeDTO.prototype, "quantity", void 0);
 class MenuItemRecipeDTO {
 }

@@ -36,13 +36,13 @@ export class MenuItemRecipeController {
 
   @Post()
   @UsePipes(new ValidationPipe())
-  addnewMenuItemRecipe(@Body() data: MenuItemRecipeDTO) {
+  addnewMenuItemRecipe(@Body() data: Partial<MenuItemRecipeDTO>) {
     return this.menuItemRecipeService.createMenuItemRecipe(data);
   }
 
   @Put()
   @UsePipes(new ValidationPipe())
-  updateMenuItemRecipe(@Body() data: MenuItemRecipeDTO) {
+  updateMenuItemRecipe(@Body() data: Partial<MenuItemRecipeDTO>) {
     return this.menuItemRecipeService.updateMenuItemRecipe(data);
   }
 

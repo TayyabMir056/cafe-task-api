@@ -35,6 +35,6 @@ __decorate([
     class_validator_1.ValidateNested({ each: true }),
     class_transformer_1.Type(() => InventoryItemQuantityDTO),
     __metadata("design:type", Array)
-], IntermediateIngredientRecipeDTO.prototype, "inventoryIngredientQuantities", void 0);
+], IntermediateIngredientRecipeDTO.prototype, "recipe", void 0);
 exports.IntermediateIngredientRecipeDTO = IntermediateIngredientRecipeDTO;
 //# sourceMappingURL=intermediate-ingredient-recipe.dto.js.map

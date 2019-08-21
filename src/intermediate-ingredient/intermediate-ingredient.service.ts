@@ -15,14 +15,10 @@ export class IntermediateIngredientService {
   ) {}
 
   async getAll() {
-    const intermediateIngredient = await this.intermediateIngredientRepository.find(
-      {
-        relations: ['priceUnit'],
-      },
-    );
-    if (!intermediateIngredient) {
-      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
-    }
+    const intermediateIngredient = await this.intermediateIngredientRepository.find();
+    // if (!intermediateIngredient) {
+    //   throw new HttpException('No items found', HttpStatus.NOT_FOUND);
+    // }
     return intermediateIngredient;
   }
 
@@ -40,8 +36,8 @@ export class IntermediateIngredientService {
   async create(data: Partial<IntermediateIngredientDTO>) {
     //Check if it already doesnot exist
 
-    const intermediateIngredientExists = this.intermediateIngredientRepository.findOne(
-      { name: data.name },
+    const intermediateIngredientExists = await this.intermediateIngredientRepository.findOne(
+      { where: { name: data.name } },
     );
     if (intermediateIngredientExists) {
       throw new HttpException(

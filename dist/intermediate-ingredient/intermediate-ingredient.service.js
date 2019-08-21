@@ -21,12 +21,7 @@ let IntermediateIngredientService = class IntermediateIngredientService {
         this.intermediateIngredientRepository = intermediateIngredientRepository;
     }
     async getAll() {
-        const intermediateIngredient = await this.intermediateIngredientRepository.find({
-            relations: ['priceUnit'],
-        });
-        if (!intermediateIngredient) {
-            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
-        }
+        const intermediateIngredient = await this.intermediateIngredientRepository.find();
         return intermediateIngredient;
     }
     async read(id) {
@@ -37,7 +32,7 @@ let IntermediateIngredientService = class IntermediateIngredientService {
         return intermediateIngredient;
     }
     async create(data) {
-        const intermediateIngredientExists = this.intermediateIngredientRepository.findOne({ name: data.name });
+        const intermediateIngredientExists = await this.intermediateIngredientRepository.findOne({ where: { name: data.name } });
         if (intermediateIngredientExists) {
             throw new common_1.HttpException(`Intermediate ingredient ${data.name} already exists`, common_1.HttpStatus.CONFLICT);
         }

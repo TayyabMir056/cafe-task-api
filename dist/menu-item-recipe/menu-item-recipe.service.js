@@ -26,7 +26,7 @@ let MenuItemRecipeService = class MenuItemRecipeService {
         const menuItemRecipe = await this.menuItemRecipeRepository.find({
             relations: ['menuItem', 'intermediateIngredient', 'inventoryIngredient'],
         });
-        if (!menuItemRecipe) {
+        if (!menuItemRecipe.length) {
             throw new common_1.HttpException('No recipes found', common_1.HttpStatus.NOT_FOUND);
         }
         return menuItemRecipe;
@@ -47,12 +47,10 @@ let MenuItemRecipeService = class MenuItemRecipeService {
             },
             where: { menuItem: menuItem },
         });
-        if (!menuItemRecipe.length) {
-            throw new common_1.HttpException('Recipe not found!', common_1.HttpStatus.NOT_FOUND);
-        }
         let recipe = [];
         await menuItemRecipe.forEach(async (recipeItem) => {
             await recipe.push({
+                id: recipeItem.id,
                 ingredient: recipeItem.ingredientType == 2
                     ? recipeItem.intermediateIngredient.id
                     : recipeItem.inventoryIngredient.id,
@@ -96,7 +94,7 @@ let MenuItemRecipeService = class MenuItemRecipeService {
                 });
             }
             else {
-                let menuItemRecipe = this.menuItemRecipeRepository.create({
+                let menuItemRecipe = await this.menuItemRecipeRepository.create({
                     menuItem: data.menuItem,
                     intermediateIngredient: ingredient.intermediateIngredient,
                     inventoryIngredient: ingredient.inventoryIngredient,
@@ -106,8 +104,8 @@ let MenuItemRecipeService = class MenuItemRecipeService {
                 await this.menuItemRecipeRepository.save(menuItemRecipe);
             }
         });
-        this.updateMenuItemCost(data.menuItem);
-        return this.readById(data.menuItem);
+        await this.updateMenuItemCost(data.menuItem);
+        return await this.readById(data.menuItem);
     }
     async delete(id) {
         const recipeItemExists = await this.menuItemRecipeRepository.findOne({

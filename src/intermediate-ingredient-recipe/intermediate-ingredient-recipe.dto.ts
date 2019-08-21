@@ -20,5 +20,5 @@ export class IntermediateIngredientRecipeDTO {
 
   @ValidateNested({ each: true })
   @Type(() => InventoryItemQuantityDTO)
-  inventoryIngredientQuantities: InventoryItemQuantityDTO[];
+  recipe: InventoryItemQuantityDTO[];
 }

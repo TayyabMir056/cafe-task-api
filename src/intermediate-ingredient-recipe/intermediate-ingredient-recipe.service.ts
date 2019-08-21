@@ -58,6 +58,7 @@ export class IntermediateIngredientRecipeService {
     let recipe = [];
     await intermediateIngredientRecipe.forEach(recipeItem => {
       recipe.push({
+        id: recipeItem.id,
         inventoryIngredient: recipeItem.inventoryIngredient.id,
         inventoryIngredient_name: recipeItem.inventoryIngredient.name,
         inventoryIngredient_cost: recipeItem.inventoryIngredient.cost,
@@ -86,23 +87,21 @@ export class IntermediateIngredientRecipeService {
       );
     }
 
-    intermediateIngredientRecipe.inventoryIngredientQuantities.forEach(
-      inventoryItemQuantity => {
-        let data = {
-          intermediateIngredient:
-            intermediateIngredientRecipe.intermediateIngredient,
-          inventoryIngredient: inventoryItemQuantity.inventoryIngredient,
-          quantity: inventoryItemQuantity.quantity,
-        };
+    intermediateIngredientRecipe.recipe.forEach(inventoryItemQuantity => {
+      let data = {
+        intermediateIngredient:
+          intermediateIngredientRecipe.intermediateIngredient,
+        inventoryIngredient: inventoryItemQuantity.inventoryIngredient,
+        quantity: inventoryItemQuantity.quantity,
+      };
 
-        var itermediateIngredientRecipeItem = this.intermediateIngredientRecipeRespository.create(
-          data,
-        );
-        this.intermediateIngredientRecipeRespository.save(
-          itermediateIngredientRecipeItem,
-        );
-      },
-    );
+      var itermediateIngredientRecipeItem = this.intermediateIngredientRecipeRespository.create(
+        data,
+      );
+      this.intermediateIngredientRecipeRespository.save(
+        itermediateIngredientRecipeItem,
+      );
+    });
     this.updateIntermediateIngredientCost(
       intermediateIngredientRecipe.intermediateIngredient,
     );
@@ -126,7 +125,7 @@ export class IntermediateIngredientRecipeService {
       );
     }
 
-    data.inventoryIngredientQuantities.forEach(async inventoryItemQuantity => {
+    data.recipe.forEach(async inventoryItemQuantity => {
       //If within the loop, an inventory ingredient does not exist, skip that and update rest
       const inventoryIngredientExists = await this.inventoryIngredientRepository.findOne(
         { id: inventoryItemQuantity.inventoryIngredient.id },
@@ -175,5 +174,7 @@ export class IntermediateIngredientRecipeService {
     this.intermediateIngredientRespository.update(intermediateIngredient, {
       cost,
     });
+
+    return { updated: intermediateIngredient.id };
   }
 }

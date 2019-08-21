@@ -50,6 +50,7 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         let recipe = [];
         await intermediateIngredientRecipe.forEach(recipeItem => {
             recipe.push({
+                id: recipeItem.id,
                 inventoryIngredient: recipeItem.inventoryIngredient.id,
                 inventoryIngredient_name: recipeItem.inventoryIngredient.name,
                 inventoryIngredient_cost: recipeItem.inventoryIngredient.cost,
@@ -66,7 +67,7 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         if (!intermediateIngredienExists) {
             throw new common_1.HttpException('intermediate ingredient does not exist', common_1.HttpStatus.NOT_FOUND);
         }
-        intermediateIngredientRecipe.inventoryIngredientQuantities.forEach(inventoryItemQuantity => {
+        intermediateIngredientRecipe.recipe.forEach(inventoryItemQuantity => {
             let data = {
                 intermediateIngredient: intermediateIngredientRecipe.intermediateIngredient,
                 inventoryIngredient: inventoryItemQuantity.inventoryIngredient,
@@ -85,7 +86,7 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         if (!intermediateIngredientExists) {
             throw new common_1.HttpException('intermediate ingredient does not exist', common_1.HttpStatus.NOT_FOUND);
         }
-        data.inventoryIngredientQuantities.forEach(async (inventoryItemQuantity) => {
+        data.recipe.forEach(async (inventoryItemQuantity) => {
             const inventoryIngredientExists = await this.inventoryIngredientRepository.findOne({ id: inventoryItemQuantity.inventoryIngredient.id });
             if (inventoryIngredientExists) {
                 this.intermediateIngredientRecipeRespository.update({
@@ -117,6 +118,7 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         this.intermediateIngredientRespository.update(intermediateIngredient, {
             cost,
         });
+        return { updated: intermediateIngredient.id };
     }
 };
 IntermediateIngredientRecipeService = __decorate([

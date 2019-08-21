@@ -21,7 +21,9 @@ let InventoryIngredientService = class InventoryIngredientService {
         this.inventoryRepository = inventoryRepository;
     }
     async showAll() {
-        const inventoryIngredient = await this.inventoryRepository.find();
+        const inventoryIngredient = await this.inventoryRepository.find({
+            relations: ['priceUnit'],
+        });
         if (!inventoryIngredient) {
             throw new common_1.HttpException('No inventory ingredients found', common_1.HttpStatus.NOT_FOUND);
         }
