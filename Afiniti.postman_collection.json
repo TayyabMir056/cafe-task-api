@@ -1,0 +1,1119 @@
+{
+	"info": {
+		"_postman_id": "94d0110f-41f6-4a0f-bb88-118d4366e597",
+		"name": "Afiniti",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST price units",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"ml\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/units",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"units"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET price units",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/units",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"units"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT price units",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"mili litres\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/units/6342f440-c399-11e9-8718-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"units",
+						"6342f440-c399-11e9-8718-308d9976e1ba"
+					]
+				},
+				"description": "provide price unit it in parameter"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE price units",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/units/6342f440-c399-11e9-8718-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"units",
+						"6342f440-c399-11e9-8718-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET categories",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST categories",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Shakes\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT categories",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Shakes and Beverages\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/categories/ce5a7bae-c399-11e9-aaa6-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories",
+						"ce5a7bae-c399-11e9-aaa6-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE categories",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/categories/ce5a7bae-c399-11e9-aaa6-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories",
+						"ce5a7bae-c399-11e9-aaa6-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET menu-item",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/menu-item",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST menu-item",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Chocolate Cake\",\n        \"sellingPrice\": 1200,\n        \"category\": {\n            \"id\": \"7cc03f94-c2e1-11e9-9c68-308d9976e1ba\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "localhost:3000/menu-item",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu-item"
+					]
+				},
+				"description": "-id is not provided. it is generated automatically by db\n-cost is not provided. it is set to -1 by default. it is updated automatically when the recipe of a menu-item is created or updated"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT menu-item",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Chocolate Fudge Cake\",\n        \"sellingPrice\": 1300,\n        \"category\": {\n            \"id\": \"7cc03f94-c2e1-11e9-9c68-308d9976e1ba\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "localhost:3000/menu-item/87109ed0-c39a-11e9-996f-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu-item",
+						"87109ed0-c39a-11e9-996f-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE menu-item",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/menu-item/87109ed0-c39a-11e9-996f-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu-item",
+						"87109ed0-c39a-11e9-996f-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET inventory-ingredient",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/inventory-ingredient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory-ingredient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST inventory-ingredient",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n\t    \"name\": \"Cocoa\",\n        \"cost\": 100,\n        \"priceUnit\": {\n            \"id\":\"8548e7fe-c2d9-11e9-97a6-308d9976e1ba\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "localhost:3000/inventory-ingredient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory-ingredient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT inventory-ingredient",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n\t    \"name\": \"Cocoa\",\n        \"cost\": 120,\n        \"priceUnit\": {\n            \"id\":\"8548e7fe-c2d9-11e9-97a6-308d9976e1ba\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "localhost:3000/inventory-ingredient/1bc2a5cc-c39c-11e9-ae1c-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory-ingredient",
+						"1bc2a5cc-c39c-11e9-ae1c-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE inventory-ingredient",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/inventory-ingredient/1bc2a5cc-c39c-11e9-ae1c-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory-ingredient",
+						"1bc2a5cc-c39c-11e9-ae1c-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET intermediate-item",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST intermediate-ingredient",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Sponge\",\n\t\"priceUnit\":{ \"id\": \"ec98e738-c39c-11e9-b782-308d9976e1ba\"}\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient"
+					]
+				},
+				"description": "CREATE intermediate-ingredient"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT intermediate-ingredient",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Ganache\",\n\t\"priceUnit\":{ \"id\": \"ec98e738-c39c-11e9-b782-308d9976e1ba\"}\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient/ab592496-c3a0-11e9-9fe3-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient",
+						"ab592496-c3a0-11e9-9fe3-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE intermediate-ingredients",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient/ab592496-c3a0-11e9-9fe3-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient",
+						"ab592496-c3a0-11e9-9fe3-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET intermediate-ingredient-recipe",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient-recipe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient-recipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST intermediate-ingredient-recipe",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"intermediateIngredient\":{\"id\":\"62c1a4ee-c39e-11e9-9691-308d9976e1ba\"},\n\t\"recipe\":[\n\t\t{\n\t\t\t\"inventoryIngredient\":{\"id\":\"8d19cd62-c32a-11e9-9da8-308d9976e1ba\"}\t,\n\t\t\t\"quantity\":1\n\t\t},\n\t\t{\n\t\t\t\"inventoryIngredient\":{\"id\":\"14d62b88-c32b-11e9-b2cb-308d9976e1ba\"}\t,\n\t\t\t\"quantity\":0.25\n\t\t},\n\t\t{\n\t\t\t\"inventoryIngredient\":{\"id\": \"0490f8ac-c32b-11e9-b50f-308d9976e1ba\"},\n\t\t\t\"quantity\":0.5\n\t\t}\t\t\n\t\t]\n\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient-recipe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient-recipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT intermediate-ingredient-recipe",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"intermediateIngredient\":{\"id\":\"62c1a4ee-c39e-11e9-9691-308d9976e1ba\"},\n\t\"recipe\":[\n\t\t{\n\t\t\t\"inventoryIngredient\":{\"id\":\"8d19cd62-c32a-11e9-9da8-308d9976e1ba\"}\t,\n\t\t\t\"quantity\":1.5\n\t\t},\n\t\t{\n\t\t\t\"inventoryIngredient\":{\"id\":\"14d62b88-c32b-11e9-b2cb-308d9976e1ba\"}\t,\n\t\t\t\"quantity\":0.25\n\t\t},\n\t\t{\n\t\t\t\"inventoryIngredient\":{\"id\": \"0490f8ac-c32b-11e9-b50f-308d9976e1ba\"},\n\t\t\t\"quantity\":0.5\n\t\t}\t\t\n\t\t]\n\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient-recipe/62c1a4ee-c39e-11e9-9691-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient-recipe",
+						"62c1a4ee-c39e-11e9-9691-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE intermediate-ingredient-recipe-item",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/intermediate-ingredient-recipe/e9b477ee-c3a1-11e9-b046-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediate-ingredient-recipe",
+						"e9b477ee-c3a1-11e9-b046-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET menu-item-recipe",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2618cbca-a2dc-4f99-9409-98ef5b4aecc4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/menu-item-recipe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu-item-recipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST menu-item-recipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"menuItem\": {\"id\": \"929476c8-c2e1-11e9-be07-308d9976e1ba\"},\r\n  \"recipe\": [\r\n  \t{\r\n    \"inventoryIngredient\": {\"id\": \"8d19cd62-c32a-11e9-9da8-308d9976e1ba\"},\r\n    \"intermediateIngredient\": null,\r\n    \"ingredientType\": 1,\r\n    \"quantity\": 1\r\n  },\r\n  {\r\n    \"inventoryIngredient\":{\"id\": \"14d62b88-c32b-11e9-b2cb-308d9976e1ba\"},\r\n    \"intermediateIngredient\":null,\r\n    \"ingredientType\": 1,\r\n    \"quantity\": 2\r\n  },\r\n  {\r\n    \"inventoryIngredient\": null,\r\n    \"intermediateIngredient\": {\"id\": \"62c1a4ee-c39e-11e9-9691-308d9976e1ba\"},\r\n    \"ingredientType\": 2,\r\n    \"quantity\": 1\r\n  }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/menu-item-recipe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu-item-recipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE menu-item-recipe",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"menuItem\": {\"id\": \"929476c8-c2e1-11e9-be07-308d9976e1ba\"},\r\n  \"recipe\": [\r\n  \t{\r\n    \"inventoryIngredient\": {\"id\": \"8d19cd62-c32a-11e9-9da8-308d9976e1ba\"},\r\n    \"intermediateIngredient\": null,\r\n    \"ingredientType\": 1,\r\n    \"quantity\": 12\r\n  },\r\n  {\r\n    \"inventoryIngredient\":{\"id\": \"14d62b88-c32b-11e9-b2cb-308d9976e1ba\"},\r\n    \"intermediateIngredient\":null,\r\n    \"ingredientType\": 1,\r\n    \"quantity\": 2\r\n  },\r\n  {\r\n    \"inventoryIngredient\": null,\r\n    \"intermediateIngredient\": {\"id\": \"62c1a4ee-c39e-11e9-9691-308d9976e1ba\"},\r\n    \"ingredientType\": 2,\r\n    \"quantity\": 1\r\n  }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/menu-item-recipe/89f9771e-c3a6-11e9-8a2b-308d9976e1ba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu-item-recipe",
+						"89f9771e-c3a6-11e9-8a2b-308d9976e1ba"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
