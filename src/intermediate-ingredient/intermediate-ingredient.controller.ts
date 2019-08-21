@@ -23,14 +23,18 @@ export class IntermediateIngredientController {
   ) {}
   @Get()
   getAllIntermediateIngredient() {
+    //Calling Service function
     return this.intermediateIngredientService.getAll();
   }
 
   @Get(':id')
   getIntermediateIngredientById(@Param('id') id: string) {
+    //Check if the id is a valid uuid
     if (!validate(id)) {
+      //throw exception if id is not valid
       throw new HttpException('Invalid id ', HttpStatus.BAD_REQUEST);
     }
+    //call service function
     return this.intermediateIngredientService.read(id);
   }
 
@@ -39,6 +43,7 @@ export class IntermediateIngredientController {
   addNewIntermediateIngredient(
     @Body() data: Partial<IntermediateIngredientDTO>,
   ) {
+    //Call service function
     return this.intermediateIngredientService.create(data);
   }
 
@@ -48,17 +53,23 @@ export class IntermediateIngredientController {
     @Param('id') id: string,
     @Body() data: Partial<IntermediateIngredientDTO>,
   ) {
+    //Check if if provided is a valid uuid
     if (!validate(id)) {
+      //Throw exception if id is not a valid uuid
       throw new HttpException('Invalid id ', HttpStatus.BAD_REQUEST);
     }
+    //Otherwise call service function
     return this.intermediateIngredientService.update(id, data);
   }
 
   @Delete(':id')
   deleteIntermediateIngredient(@Param('id') id: string) {
+    //Check if id is a valid uuid
     if (!validate(id)) {
+      //throw exvcption if id is not a valid uuid
       throw new HttpException('Invalid id ', HttpStatus.BAD_REQUEST);
     }
+    //Otherwise call the service function
     return this.intermediateIngredientService.delete(id);
   }
 }

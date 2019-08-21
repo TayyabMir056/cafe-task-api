@@ -24,17 +24,20 @@ export class IntermediateIngredientRecipeController {
 
   @Get()
   getAllIntermediateIngredientRecipe() {
+    //Calling service function
     return this.intermediateIngredientRecipeService.getAll();
   }
 
   @Get(':intermediateIngredient_id')
   getRecipeByIntermediateIngredientId(
-    @Param('intermediateIngredient_id') intermediateIngredient_id: string,
+    @Param('intermediateIngredient_id') intermediateIngredient_id: string, //We get the all the recipe items corresponding to a single intermediate ingredient id
   ) {
     //Check id is valid uuid
     if (!validate(intermediateIngredient_id)) {
+      //throw exception if the id is not a valid uuid
       throw new HttpException('Invalid id', HttpStatus.BAD_REQUEST);
     }
+    //Otherwise call the service function
     return this.intermediateIngredientRecipeService.getRecipeByIntermediateIngredient(
       {
         id: intermediateIngredient_id,
@@ -47,6 +50,7 @@ export class IntermediateIngredientRecipeController {
   addRecipeForIntermediateIngredient(
     @Body() data: IntermediateIngredientRecipeDTO,
   ) {
+    //Calling the service function
     return this.intermediateIngredientRecipeService.createRecipeForIntermediateIngredient(
       data,
     );
@@ -60,8 +64,10 @@ export class IntermediateIngredientRecipeController {
   ) {
     //Check id is valid uuid
     if (!validate(intermediateIngredient_id)) {
+      //throw exception if not a valid uuid
       throw new HttpException('Invalid id', HttpStatus.BAD_REQUEST);
     }
+    //Call service function
     this.intermediateIngredientRecipeService.updateIntermediateIngredientRecipe(
       intermediateIngredient_id,
       data,
@@ -74,6 +80,7 @@ export class IntermediateIngredientRecipeController {
     if (!validate(id)) {
       throw new HttpException('Invalid id', HttpStatus.BAD_REQUEST);
     }
+    //Call service function
     this.intermediateIngredientRecipeService.deleteIntermediateIngredientRecipe(
       id,
     );

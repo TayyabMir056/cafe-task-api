@@ -14,16 +14,19 @@ export class MenuItemCategoryService {
 
   async showAll() {
     const menuItemCategory = await this.categoryRepository.find();
+    //If no categories found in the database
     if (!menuItemCategory) {
-      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+      throw new HttpException('No categories found', HttpStatus.NOT_FOUND);
     }
     return menuItemCategory;
   }
 
   async create(data: Partial<MenuItemCategoryDTO>) {
+    //first check if the name already exists.. name can not be duplicated
     const categoryExists = await this.categoryRepository.findOne({
       name: data.name,
     });
+    //throw exception if name exists
     if (categoryExists) {
       throw new HttpException('category already exists', HttpStatus.CONFLICT);
     }
@@ -34,6 +37,7 @@ export class MenuItemCategoryService {
 
   async read(id: string) {
     const menuItemCategory = await this.categoryRepository.findOne(id);
+    //if category id does not exist in the database, throw exception
     if (!menuItemCategory) {
       throw new HttpException('Not found', HttpStatus.NOT_FOUND);
     }
@@ -41,14 +45,18 @@ export class MenuItemCategoryService {
   }
 
   async update(id: string, data: Partial<MenuItemCategoryDTO>) {
+    //first check if the provided id exists in the database
     const menuItemCategory = await this.categoryRepository.findOne({ id });
     if (!menuItemCategory) {
       throw new HttpException('Not Found', HttpStatus.NOT_FOUND);
     }
+    //if the id is valid (exists), then update the info
     await this.categoryRepository.update(id, data);
     return await this.categoryRepository.findOne(id);
   }
   async destroy(id: string) {
+    //first check if the provided id exists in the database
+
     const menuItemCategory = await this.categoryRepository.findOne({ id });
     if (!menuItemCategory) {
       throw new HttpException('Not Found', HttpStatus.NOT_FOUND);

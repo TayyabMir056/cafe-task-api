@@ -23,6 +23,7 @@ export class IntermediateIngredientRecipe {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  //Multiple recipe items (inventory ingredients) for one intermediate ingredient
   @ManyToOne(
     type => IntermediateIngredient,
     intermediateIngredient =>

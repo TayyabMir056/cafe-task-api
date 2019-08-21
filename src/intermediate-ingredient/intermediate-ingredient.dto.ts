@@ -1,6 +1,5 @@
 import { PriceUnit } from '../price-unit/price-unit.entity';
 import { IsString, IsNumber, ValidateNested } from 'class-validator';
-import { isClass } from '@babel/types';
 import { Type } from 'class-transformer';
 
 export class IntermediateIngredientDTO {

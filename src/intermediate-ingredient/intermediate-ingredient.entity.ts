@@ -36,6 +36,7 @@ export class IntermediateIngredient {
   })
   cost: number;
 
+  //Each IntermediateIngredients contains a single price unit (e.g. kg,litre)
   @ManyToOne(
     type => PriceUnit,
     priceUnit => priceUnit.intermediateIngredients,
@@ -44,6 +45,7 @@ export class IntermediateIngredient {
   @JoinColumn({ name: 'priceUnit' })
   priceUnit: PriceUnit | null;
 
+  //ItermidateIngredient foreign key is in IntermediateIngredientRecipeEntity
   @OneToMany(
     type => IntermediateIngredientRecipe,
     intermediateIngredientRecipe =>
@@ -51,6 +53,7 @@ export class IntermediateIngredient {
   )
   intermediateIngredientRecipes: IntermediateIngredientRecipe[];
 
+  //IntermediateIngredient foreign key is used in menuItemRecipe
   @OneToMany(
     type => MenuItemRecipe,
     menuItemRecipe => menuItemRecipe.intermediateIngredient,

@@ -27,8 +27,9 @@ export class IntermediateIngredientRecipeService {
         relations: ['intermediateIngredient', 'inventoryIngredient'],
       },
     );
-    if (!intermediateIngRecipe) {
-      throw new HttpException('Recipe not found', HttpStatus.NOT_FOUND);
+    //if no recipes are found in the database
+    if (!intermediateIngRecipe.length) {
+      throw new HttpException('no recipe found', HttpStatus.NOT_FOUND);
     }
     return intermediateIngRecipe;
   }
@@ -36,6 +37,17 @@ export class IntermediateIngredientRecipeService {
   async getRecipeByIntermediateIngredient(
     intermediateIngredient: Partial<IntermediateIngredient>,
   ) {
+    //first check if intermediate ingredient exists in the database
+    const intermediateIngredientExists = await this.intermediateIngredientRespository.findOne(
+      { id: intermediateIngredient.id },
+    );
+    if (!intermediateIngredientExists) {
+      throw new HttpException(
+        'intermediate ingredient not found',
+        HttpStatus.NOT_FOUND,
+      );
+    }
+
     let intermediateIngredientRecipe = await this.intermediateIngredientRecipeRespository.find(
       {
         join: {
@@ -50,11 +62,11 @@ export class IntermediateIngredientRecipeService {
         where: { intermediateIngredient: intermediateIngredient },
       },
     );
-
+    //If no recipe found for the provided intermediate ingredient
     if (!intermediateIngredientRecipe) {
       throw new HttpException('Recipe not found', HttpStatus.NOT_FOUND);
     }
-
+    //If recipe items are found, loop through them and push them in the recipe[] array
     let recipe = [];
     await intermediateIngredientRecipe.forEach(recipeItem => {
       recipe.push({
@@ -102,6 +114,7 @@ export class IntermediateIngredientRecipeService {
         itermediateIngredientRecipeItem,
       );
     });
+    //Update the cost for the intermediate ingredient
     this.updateIntermediateIngredientCost(
       intermediateIngredientRecipe.intermediateIngredient,
     );
@@ -141,7 +154,7 @@ export class IntermediateIngredientRecipeService {
         );
       }
     });
-
+    //Update cost of the intermediate ingredient
     this.updateIntermediateIngredientCost(data.intermediateIngredient);
     return this.getRecipeByIntermediateIngredient(data.intermediateIngredient);
   }
@@ -160,6 +173,7 @@ export class IntermediateIngredientRecipeService {
     return { deleted: true };
   }
 
+  //intermediate ingredients's cost has to be updated everytime its recipe is created or updated
   async updateIntermediateIngredientCost(
     intermediateIngredient: IntermediateIngredient,
   ) {

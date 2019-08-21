@@ -26,6 +26,7 @@ export class InventoryIngredientController {
 
   @Get(':id')
   gerIngredientById(@Param('id') id: string) {
+    //Check if the id provided is a valid uuid
     if (!validate(id)) {
       throw new HttpException('invalid id', HttpStatus.BAD_REQUEST);
     }
@@ -44,14 +45,18 @@ export class InventoryIngredientController {
     @Param('id') id: string,
     @Body() data: Partial<InventoryIngredientDTO>,
   ) {
+    //check if the provided id is a valid uuid
     if (!validate(id)) {
       throw new HttpException('invalid id', HttpStatus.BAD_REQUEST);
     }
+    //Then call the service function
     return this.inventoryIngredientService.update(id, data);
   }
 
   @Delete(':id')
   deleteIngredient(@Param('id') id: string) {
+    //check if the provided id is a valid uuid
+
     if (!validate(id)) {
       throw new HttpException('invalid id', HttpStatus.BAD_REQUEST);
     }
