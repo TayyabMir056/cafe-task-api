@@ -26,6 +26,7 @@ export class MenuItemService {
       { id },
       { relations: ['category'] },
     );
+    //if menu item not found, throw 404 exception
     if (!menuItem) {
       throw new HttpException('menu item not found', HttpStatus.NOT_FOUND);
     }

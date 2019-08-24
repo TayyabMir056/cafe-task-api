@@ -28,12 +28,16 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         const intermediateIngRecipe = await this.intermediateIngredientRecipeRespository.find({
             relations: ['intermediateIngredient', 'inventoryIngredient'],
         });
-        if (!intermediateIngRecipe) {
-            throw new common_1.HttpException('Recipe not found', common_1.HttpStatus.NOT_FOUND);
+        if (!intermediateIngRecipe.length) {
+            throw new common_1.HttpException('no recipe found', common_1.HttpStatus.NOT_FOUND);
         }
         return intermediateIngRecipe;
     }
     async getRecipeByIntermediateIngredient(intermediateIngredient) {
+        const intermediateIngredientExists = await this.intermediateIngredientRespository.findOne({ id: intermediateIngredient.id });
+        if (!intermediateIngredientExists) {
+            throw new common_1.HttpException('intermediate ingredient not found', common_1.HttpStatus.NOT_FOUND);
+        }
         let intermediateIngredientRecipe = await this.intermediateIngredientRecipeRespository.find({
             join: {
                 alias: 'intermediateIngredientRecipe',

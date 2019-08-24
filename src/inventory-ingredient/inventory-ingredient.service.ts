@@ -15,6 +15,7 @@ export class InventoryIngredientService {
     const inventoryIngredient = await this.inventoryRepository.find({
       relations: ['priceUnit'],
     });
+    //If no inventory ingredients found in the database, 
     if (!inventoryIngredient) {
       throw new HttpException(
         'No inventory ingredients found',

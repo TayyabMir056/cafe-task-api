@@ -23,7 +23,7 @@ let MenuItemCategoryService = class MenuItemCategoryService {
     async showAll() {
         const menuItemCategory = await this.categoryRepository.find();
         if (!menuItemCategory) {
-            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+            throw new common_1.HttpException('No categories found', common_1.HttpStatus.NOT_FOUND);
         }
         return menuItemCategory;
     }
