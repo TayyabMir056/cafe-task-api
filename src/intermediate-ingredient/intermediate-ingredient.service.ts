@@ -15,7 +15,11 @@ export class IntermediateIngredientService {
   ) {}
 
   async getAll() {
-    const intermediateIngredient = await this.intermediateIngredientRepository.find();
+    const intermediateIngredient = await this.intermediateIngredientRepository.find(
+      {
+        relations: ['priceUnit'],
+      },
+    );
     // if (!intermediateIngredient) {
     //   throw new HttpException('No items found', HttpStatus.NOT_FOUND);
     // }

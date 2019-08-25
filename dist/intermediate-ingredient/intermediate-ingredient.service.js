@@ -21,7 +21,9 @@ let IntermediateIngredientService = class IntermediateIngredientService {
         this.intermediateIngredientRepository = intermediateIngredientRepository;
     }
     async getAll() {
-        const intermediateIngredient = await this.intermediateIngredientRepository.find();
+        const intermediateIngredient = await this.intermediateIngredientRepository.find({
+            relations: ['priceUnit'],
+        });
         return intermediateIngredient;
     }
     async read(id) {
