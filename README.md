@@ -8,7 +8,7 @@ Create and manage menu items with their recipes and cost.
   OR Download zip and extract it to required folder 
  - Use PgAdmin or Pgsql to create database "Afiniti_cafe" 
  - restore database using the file Afiniti_cafe2.backup
- - set database configurations in src/app.module.ts if you changed the database defaults while restoring or if you want to change the port.. the default is 3000
+ - set database configurations in src/app.module.ts if you changed the database defaults while restoring or if you want to change the port.. the default is 3500
  - open terminal in the directory and run the following command
  
 
