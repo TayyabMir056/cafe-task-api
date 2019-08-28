@@ -133,6 +133,7 @@ export class MenuItemRecipeService {
       throw new HttpException('item not found', HttpStatus.NOT_FOUND);
     }
     await this.menuItemRecipeRepository.delete({ id });
+    //await this.updateMenuItemCost(recipeItemExists.menuItem); //Update Menu Item cost after calculating from the recipe
     return { deleted: true };
   }
 

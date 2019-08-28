@@ -93,23 +93,40 @@ let IntermediateIngredientRecipeService = class IntermediateIngredientRecipeServ
         data.recipe.forEach(async (inventoryItemQuantity) => {
             const inventoryIngredientExists = await this.inventoryIngredientRepository.findOne({ id: inventoryItemQuantity.inventoryIngredient.id });
             if (inventoryIngredientExists) {
-                this.intermediateIngredientRecipeRespository.update({
-                    intermediateIngredient: { id: intermediateIngredient_id },
+                const inventoryItemExistsInRecipe = await this.intermediateIngredientRecipeRespository.findOne({
+                    intermediateIngredient: data.intermediateIngredient,
                     inventoryIngredient: inventoryItemQuantity.inventoryIngredient,
-                }, { quantity: inventoryItemQuantity.quantity });
+                });
+                if (inventoryItemExistsInRecipe) {
+                    this.intermediateIngredientRecipeRespository.update({
+                        intermediateIngredient: { id: intermediateIngredient_id },
+                        inventoryIngredient: inventoryItemQuantity.inventoryIngredient,
+                    }, { quantity: inventoryItemQuantity.quantity });
+                }
+                else {
+                    let createData = {
+                        intermediateIngredient: data.intermediateIngredient,
+                        inventoryIngredient: inventoryItemQuantity.inventoryIngredient,
+                        quantity: inventoryItemQuantity.quantity,
+                    };
+                    var itermediateIngredientRecipeItem = this.intermediateIngredientRecipeRespository.create(createData);
+                    this.intermediateIngredientRecipeRespository.save(itermediateIngredientRecipeItem);
+                }
             }
         });
-        this.updateIntermediateIngredientCost(data.intermediateIngredient);
-        return this.getRecipeByIntermediateIngredient(data.intermediateIngredient);
+        await this.updateIntermediateIngredientCost(data.intermediateIngredient);
+        return await this.getRecipeByIntermediateIngredient(data.intermediateIngredient);
     }
     async deleteIntermediateIngredientRecipe(id) {
-        const intermediateIngRecipe = this.intermediateIngredientRecipeRespository.findOne({ id });
+        const intermediateIngRecipe = await this.intermediateIngredientRecipeRespository.findOne({ id });
+        await console.log('intermediateIngRecipe:', intermediateIngRecipe);
         if (!intermediateIngRecipe) {
             throw new common_1.HttpException('item id not found', common_1.HttpStatus.NOT_FOUND);
         }
         await this.intermediateIngredientRecipeRespository.delete({
             id,
         });
+        await this.updateIntermediateIngredientCost(intermediateIngRecipe.intermediateIngredient);
         return { deleted: true };
     }
     async updateIntermediateIngredientCost(intermediateIngredient) {
